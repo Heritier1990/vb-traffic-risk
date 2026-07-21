@@ -1,0 +1,1997 @@
+{
+  "VIRGINIA BEACH BL": {
+    "lat": 36.7159724,
+    "lon": -76.0935474,
+    "display_name": "Virginia Beach Terminal, 3925, Virginia Beach, Virginia, 23456, United States"
+  },
+  "HOLLAND RD": {
+    "lat": 36.7876169,
+    "lon": -76.07956,
+    "display_name": "Holland Road, Virginia Beach, Virginia, 23453, United States"
+  },
+  "FIRST COLONIAL RD": {
+    "lat": 36.8739603,
+    "lon": -76.0381837,
+    "display_name": "First Colonial Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "DAM NECK RD": {
+    "lat": 36.7838125,
+    "lon": -75.964935,
+    "display_name": "Dam Neck Road, Virginia Beach, Virginia, 23461, United States"
+  },
+  "LASKIN RD": {
+    "lat": 36.8580895,
+    "lon": -75.9854267,
+    "display_name": "Laskin Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "GREAT NECK RD N": {
+    "lat": 36.8649215,
+    "lon": -76.0449941,
+    "display_name": "North Great Neck Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "LONDON BRIDGE RD": {
+    "lat": 36.7817907,
+    "lon": -76.0470248,
+    "display_name": "London Bridge Road, Colony Acres, Virginia Beach, Virginia, 23456, United States"
+  },
+  "ROSEMONT RD S": {
+    "lat": 36.8401452,
+    "lon": -76.0978384,
+    "display_name": "North Rosemont Road, Princess Anne Plaza, Virginia Beach, Virginia, 23452, United States"
+  },
+  "FERRELL PW": {
+    "lat": 36.7443,
+    "lon": -76.0682,
+    "display_name": "Ferrell Parkway, Virginia Beach, Virginia, United States"
+  },
+  "1/2 STREET": {
+    "lat": 36.8487012,
+    "lon": -75.981379,
+    "display_name": "21 1/2 Street, Salt Meadow Bay Condominiums, Virginia Beach, Virginia, 23451, United States"
+  },
+  "14TH ST": {
+    "lat": 36.8423902,
+    "lon": -75.9741092,
+    "display_name": "14th Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "17TH ST": {
+    "lat": 36.8412035,
+    "lon": -75.9872786,
+    "display_name": "17th Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "18TH ST": {
+    "lat": 36.844965,
+    "lon": -75.9823004,
+    "display_name": "18th Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "19TH ST": {
+    "lat": 36.8446493,
+    "lon": -75.9898216,
+    "display_name": "19th Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "20TH ST": {
+    "lat": 36.8463327,
+    "lon": -75.9849505,
+    "display_name": "20th Street, South Beach Villas, Virginia Beach, Virginia, 23451, United States"
+  },
+  "21ST ST": {
+    "lat": 36.8488989,
+    "lon": -75.9773998,
+    "display_name": "21st Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "22 ND 1/2 ST": {
+    "lat": 36.8635831,
+    "lon": -75.9798968,
+    "display_name": "35 1/2 Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "22ND ST": {
+    "lat": 36.8485285,
+    "lon": -75.9852535,
+    "display_name": "22nd Street, Salt Meadow Bay Condominiums, Virginia Beach, Virginia, 23451, United States"
+  },
+  "23RD ST": {
+    "lat": 36.8500005,
+    "lon": -75.9893187,
+    "display_name": "23rd Street, Salt Meadow Bay Condominiums, Virginia Beach, Virginia, 23451, United States"
+  },
+  "24TH ST": {
+    "lat": 36.8514469,
+    "lon": -75.9801615,
+    "display_name": "24th Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "264E": {
+    "lat": 36.8496579,
+    "lon": -75.9760751,
+    "display_name": "Virginia Beach, Virginia, United States"
+  },
+  "264W": {
+    "lat": 36.8496579,
+    "lon": -75.9760751,
+    "display_name": "Virginia Beach, Virginia, United States"
+  },
+  "26TH ST": {
+    "lat": 36.8545945,
+    "lon": -75.9762268,
+    "display_name": "26th Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "28TH ST": {
+    "lat": 36.8563326,
+    "lon": -75.9779672,
+    "display_name": "28th Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "30TH ST": {
+    "lat": 36.8577487,
+    "lon": -75.9813732,
+    "display_name": "30th Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "32ND ST": {
+    "lat": 36.8597315,
+    "lon": -75.9816357,
+    "display_name": "32nd Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "33RD ST": {
+    "lat": 36.8607987,
+    "lon": -75.9813168,
+    "display_name": "33rd Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "34TH ST": {
+    "lat": 36.8618678,
+    "lon": -75.9810281,
+    "display_name": "34th Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "36TH ST": {
+    "lat": 36.8640652,
+    "lon": -75.9800258,
+    "display_name": "36th Street, Virginia Beach, Virginia, 23451, United States"
+  },
+  "5TH ST": {
+    "lat": 36.8009241,
+    "lon": -76.0261407,
+    "display_name": "5th Street, Virginia Beach, Virginia, 23454, United States"
+  },
+  "78TH ST": {
+    "lat": 36.9028083,
+    "lon": -75.9924934,
+    "display_name": "78th Street, North Virginia Beach, Virginia Beach, Virginia, 23451, United States"
+  },
+  "7TH ST": {
+    "lat": 36.8054481,
+    "lon": -76.0365798,
+    "display_name": "7th Street, Virginia Beach, Virginia, 23454, United States"
+  },
+  "83RD ST": {
+    "lat": 36.9076114,
+    "lon": -75.9946598,
+    "display_name": "83rd Street, North Virginia Beach, Virginia Beach, Virginia, 23451, United States"
+  },
+  "9TH ST": {
+    "lat": 36.8185887,
+    "lon": -75.9790477,
+    "display_name": "9th Street, Virginia Beach, Virginia, 23461, United States"
+  },
+  "ACADEMY DR": {
+    "lat": 36.7723011,
+    "lon": -76.0888562,
+    "display_name": "Linxx Academy of Martial Arts, Dairy Queen drive-through, Landstown Place, Landstown, Virginia Beach, Virginia, 23453, United States"
+  },
+  "ADAM KEELING RD": {
+    "lat": 36.9026928,
+    "lon": -76.0758235,
+    "display_name": "Adam Keeling Road, Virginia Beach, Virginia, 23459, United States"
+  },
+  "ALCOTT RD": {
+    "lat": 36.8446324,
+    "lon": -76.0882926,
+    "display_name": "Alcott Road, Malibu, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "ANGELFISH LANE": {
+    "lat": 36.7095688,
+    "lon": -75.9311012,
+    "display_name": "Angelfish Lane, Virginia Beach, Virginia, 23456, United States"
+  },
+  "APPIAN AV": {
+    "lat": 36.8281227,
+    "lon": -76.0866738,
+    "display_name": "Appian Avenue, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "ARCTIC AV": {
+    "lat": 36.8462841,
+    "lon": -75.9777789,
+    "display_name": "Arctic Avenue, Virginia Beach, Virginia, 23451, United States"
+  },
+  "ARCTIC AVE": {
+    "lat": 36.8443194,
+    "lon": -75.9772406,
+    "display_name": "Arctic Avenue, Virginia Beach, Virginia, 23451, United States"
+  },
+  "ARCTIC AVENUE": {
+    "lat": 36.8597705,
+    "lon": -75.9814539,
+    "display_name": "Arctic Avenue, Virginia Beach, Virginia, 23451, United States"
+  },
+  "ASHAWAY ROAD": {
+    "lat": 36.809975,
+    "lon": -76.0854873,
+    "display_name": "Ashaway Road, Kings Arm, Virginia Beach, Virginia, 23453, United States"
+  },
+  "ATLANTIC AV": {
+    "lat": 36.9293939,
+    "lon": -76.0148788,
+    "display_name": "Atlantic Avenue, Virginia Beach, Virginia, United States"
+  },
+  "ATLANTIC AVE": {
+    "lat": 36.9293939,
+    "lon": -76.0148788,
+    "display_name": "Atlantic Avenue, Virginia Beach, Virginia, United States"
+  },
+  "ATLANTIC AVENUE": {
+    "lat": 36.9103642,
+    "lon": -75.9940962,
+    "display_name": "Atlantic Avenue, North Virginia Beach, Virginia Beach, Virginia, United States"
+  },
+  "BALTIC AV": {
+    "lat": 36.8340792,
+    "lon": -75.9764251,
+    "display_name": "Baltic Avenue, Shore Acres, Virginia Beach, Virginia, 23451, United States"
+  },
+  "BALTIC AVE": {
+    "lat": 36.8340792,
+    "lon": -75.9764251,
+    "display_name": "Baltic Avenue, Shore Acres, Virginia Beach, Virginia, 23451, United States"
+  },
+  "BANCROFT DR": {
+    "lat": 36.815766,
+    "lon": -76.0960484,
+    "display_name": "Bancroft Drive, Pecan Gardens, Virginia Beach, Virginia, 23452, United States"
+  },
+  "BASSETT AV": {
+    "lat": 36.8379143,
+    "lon": -76.0699401,
+    "display_name": "Bassett Avenue, Pinewood Gardens, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "BAY COLONY DR": {
+    "lat": 36.8747773,
+    "lon": -75.9949491,
+    "display_name": "Bay Colony Drive, Cavalier Park, Virginia Beach, Virginia, 23451, United States"
+  },
+  "BAY DR": {
+    "lat": 36.868663,
+    "lon": -75.9935126,
+    "display_name": "Bay Drive, Linkhorn Park, Virginia Beach, Virginia, 23451, United States"
+  },
+  "BAY POINT DR": {
+    "lat": 36.8897671,
+    "lon": -76.0337742,
+    "display_name": "Bay Point Drive, Virginia Beach, Virginia, 23451, United States"
+  },
+  "BAYCLIFF DR": {
+    "lat": 36.883346,
+    "lon": -76.0341534,
+    "display_name": "Baycliff Drive, Virginia Beach, Virginia, 23451, United States"
+  },
+  "BEACH TOWN DR": {
+    "lat": 36.8389893,
+    "lon": -75.9945551,
+    "display_name": "Beach Town Drive, Virginia Beach, Virginia, 23451, United States"
+  },
+  "BELLS RD": {
+    "lat": 36.8207703,
+    "lon": -75.9930715,
+    "display_name": "Bells Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "BELLS ROAD": {
+    "lat": 36.8207703,
+    "lon": -75.9930715,
+    "display_name": "Bells Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "BIRDNECK RD": {
+    "lat": 36.8536633,
+    "lon": -75.9956684,
+    "display_name": "Birdneck Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "BIRDNECK RD N": {
+    "lat": 36.8540264,
+    "lon": -75.9965677,
+    "display_name": "Birdneck Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "BIRDNECK RD S": {
+    "lat": 36.8536633,
+    "lon": -75.9956684,
+    "display_name": "Birdneck Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "BLK DAM NECK": {
+    "lat": 36.7827858,
+    "lon": -75.998983,
+    "display_name": "H&R Block, 1650, General Booth Boulevard, Dam Neck Crossing, Virginia Beach, Virginia, 23454, United States"
+  },
+  "BLK GENERAL BOOTH BLVD": {
+    "lat": 36.7827858,
+    "lon": -75.998983,
+    "display_name": "H&R Block, 1650, General Booth Boulevard, Dam Neck Crossing, Virginia Beach, Virginia, 23454, United States"
+  },
+  "BLK UPTON DRIVE": {
+    "lat": 36.7594965,
+    "lon": -76.0064938,
+    "display_name": "H&R Block, 2133, Upton Drive, Nimmo, Virginia Beach, Virginia, 23454, United States"
+  },
+  "BLK VA.BEACH BLVD": {
+    "lat": 36.7827858,
+    "lon": -75.998983,
+    "display_name": "H&R Block, 1650, General Booth Boulevard, Dam Neck Crossing, Virginia Beach, Virginia, 23454, United States"
+  },
+  "BLOCK UPTON DR": {
+    "lat": 36.7594965,
+    "lon": -76.0064938,
+    "display_name": "H&R Block, 2133, Upton Drive, Nimmo, Virginia Beach, Virginia, 23454, United States"
+  },
+  "BLOCK UPTON DRIVE": {
+    "lat": 36.7594965,
+    "lon": -76.0064938,
+    "display_name": "H&R Block, 2133, Upton Drive, Nimmo, Virginia Beach, Virginia, 23454, United States"
+  },
+  "BLUEBIRD DR": {
+    "lat": 36.8520097,
+    "lon": -75.9976803,
+    "display_name": "Bluebird Drive, Virginia Beach, Virginia, 23451, United States"
+  },
+  "BOLD RULER DR": {
+    "lat": 36.7783516,
+    "lon": -75.9767706,
+    "display_name": "Bold Ruler Drive, Ocean Lakes, Virginia Beach, Virginia, 23461, United States"
+  },
+  "BOMBAY LNDG": {
+    "lat": 36.7415497,
+    "lon": -76.0657539,
+    "display_name": "Bombay Landing, Victoria Park, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "BONNEY": {
+    "lat": 36.6636986,
+    "lon": -75.9448579,
+    "display_name": "Bonney Cove, Virginia Beach, Virginia, United States"
+  },
+  "BOW CREEK BL": {
+    "lat": 36.8188308,
+    "lon": -76.0892491,
+    "display_name": "Bow Creek Boulevard, Pecan Gardens, Virginia Beach, Virginia, 23452, United States"
+  },
+  "BOW CREEK BLVD": {
+    "lat": 36.8188308,
+    "lon": -76.0892491,
+    "display_name": "Bow Creek Boulevard, Pecan Gardens, Virginia Beach, Virginia, 23452, United States"
+  },
+  "BOYD RD": {
+    "lat": 36.8379855,
+    "lon": -76.0924299,
+    "display_name": "Boyd Road, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "BUCKNER BL": {
+    "lat": 36.7898647,
+    "lon": -76.0940474,
+    "display_name": "Buckner Boulevard, Virginia Beach, Virginia, 23453, United States"
+  },
+  "BUCKNER BLVD": {
+    "lat": 36.7899567,
+    "lon": -76.0926405,
+    "display_name": "Buckner Boulevard, Virginia Beach, Virginia, 23453, United States"
+  },
+  "BUCKNER RD": {
+    "lat": 36.7907186,
+    "lon": -76.0869645,
+    "display_name": "Buckner Road Multi-Use Path, Virginia Beach, Virginia, 23453, United States"
+  },
+  "BURFORD AVE": {
+    "lat": 36.836611,
+    "lon": -75.9976967,
+    "display_name": "Burford Avenue, Virginia Beach, Virginia, 23451, United States"
+  },
+  "BYRD LN": {
+    "lat": 36.8420811,
+    "lon": -76.0523861,
+    "display_name": "Byrd Lane, London Bridge, Lynnhaven, Virginia Beach, Virginia, 23454, United States"
+  },
+  "CAMINO REAL SOUTH": {
+    "lat": 36.7475227,
+    "lon": -75.9924905,
+    "display_name": "Camino Real South, Lagomar, Virginia Beach, Virginia, 23461, United States"
+  },
+  "CARDINAL RD": {
+    "lat": 36.8599438,
+    "lon": -76.0024904,
+    "display_name": "Cardinal Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "CASANOVA DR": {
+    "lat": 36.7703855,
+    "lon": -75.9948366,
+    "display_name": "Casanova Drive, Ocean Lakes, Nimmo, Virginia Beach, Virginia, 23454, United States"
+  },
+  "CELTIC DRIVE": {
+    "lat": 36.7874484,
+    "lon": -76.0918061,
+    "display_name": "Celtic Drive, Virginia Beach, Virginia, 23453, United States"
+  },
+  "CENTRAL DR": {
+    "lat": 36.8158823,
+    "lon": -76.0583005,
+    "display_name": "Central Drive, Virginia Beach, Virginia, 23454, United States"
+  },
+  "CHAMBERINO DR": {
+    "lat": 36.757914,
+    "lon": -75.9840363,
+    "display_name": "Chamberino Drive, Lagomar, Virginia Beach, Virginia, 23461, United States"
+  },
+  "CHAMPLAIN LA": {
+    "lat": 36.81644,
+    "lon": -76.0954057,
+    "display_name": "Champlain Lane, Pecan Gardens, Virginia Beach, Virginia, 23452, United States"
+  },
+  "CHANDLER CREEK RD": {
+    "lat": 36.7834064,
+    "lon": -76.0867741,
+    "display_name": "Chandler Creek RD, Landstown, Virginia Beach, Virginia, 23453, United States"
+  },
+  "CHESTER ST": {
+    "lat": 36.8343005,
+    "lon": -76.0922926,
+    "display_name": "Chester Street, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "CHESTERTON CT": {
+    "lat": 36.8015195,
+    "lon": -76.080445,
+    "display_name": "Chesterton Court, The Lakes, Virginia Beach, Virginia, 23453, United States"
+  },
+  "CHICKEN VALLEY RD": {
+    "lat": 36.8479141,
+    "lon": -76.045551,
+    "display_name": "Chicken Valley Road, Point O'Woods, London Bridge, Lynnhaven, Virginia Beach, Virginia, 23454, United States"
+  },
+  "CLUB HOUSE RD": {
+    "lat": 36.8234742,
+    "lon": -76.0886342,
+    "display_name": "Club House Road, Windsor Woods, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "CLUBHOUSE RD S": {
+    "lat": 36.80159,
+    "lon": -76.0772047,
+    "display_name": "Old Clubhouse Road, Cardinal Estates, Virginia Beach, Virginia, 23453, United States"
+  },
+  "CONCERT DR": {
+    "lat": 36.7795573,
+    "lon": -76.0963093,
+    "display_name": "Concert Drive, Landstown, Virginia Beach, Virginia, 23453, United States"
+  },
+  "CONCERT DRIVE": {
+    "lat": 36.7795573,
+    "lon": -76.0963093,
+    "display_name": "Concert Drive, Landstown, Virginia Beach, Virginia, 23453, United States"
+  },
+  "CORPORATE LANDING PW": {
+    "lat": 36.7845313,
+    "lon": -76.0097276,
+    "display_name": "Corporate Landing Parkway, Virginia Beach, Virginia, 23454, United States"
+  },
+  "CORVETTE LA": {
+    "lat": 36.8297178,
+    "lon": -76.0813708,
+    "display_name": "Corvette Lane, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "CRANSTON LA": {
+    "lat": 36.8432732,
+    "lon": -76.0822349,
+    "display_name": "Cranston Lane, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "CULVER LA": {
+    "lat": 36.7683001,
+    "lon": -75.9932502,
+    "display_name": "Culver Lane, Ocean Lakes, Virginia Beach, Virginia, 23461, United States"
+  },
+  "CULVER LANE": {
+    "lat": 36.7709153,
+    "lon": -75.9934575,
+    "display_name": "Culver Lane, Ocean Lakes, Virginia Beach, Virginia, 23454, United States"
+  },
+  "CULVER LN": {
+    "lat": 36.7731491,
+    "lon": -75.998991,
+    "display_name": "Culver Lane, Ocean Lakes, Nimmo, Virginia Beach, Virginia, 23454, United States"
+  },
+  "CYPRESS AV": {
+    "lat": 36.8482114,
+    "lon": -75.9841785,
+    "display_name": "Cypress Avenue, Salt Meadow Bay Condominiums, Virginia Beach, Virginia, 23451, United States"
+  },
+  "DAM NECK": {
+    "lat": 36.788611,
+    "lon": -75.9644052,
+    "display_name": "Training Support Center Hampton Roads, Virginia Beach, Virginia, 23461, United States"
+  },
+  "DAM NECK RD.": {
+    "lat": 36.78567,
+    "lon": -76.0170476,
+    "display_name": "Dam Neck Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "DAM NECK ROAD": {
+    "lat": 36.78567,
+    "lon": -76.0170476,
+    "display_name": "Dam Neck Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "DANA LA": {
+    "lat": 36.8170594,
+    "lon": -76.0950186,
+    "display_name": "Dana Lane, Pecan Gardens, Virginia Beach, Virginia, 23452, United States"
+  },
+  "DAYTONA DR": {
+    "lat": 36.8369378,
+    "lon": -76.0868618,
+    "display_name": "Daytona Drive, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "DIANA LEE DR": {
+    "lat": 36.8099925,
+    "lon": -76.0923487,
+    "display_name": "Diana Lee Drive, Virginia Beach, Virginia, 23453, United States"
+  },
+  "DILLINGHAM RD": {
+    "lat": 36.7445717,
+    "lon": -76.0377087,
+    "display_name": "Dillingham Road, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "DILLON DR": {
+    "lat": 36.8315196,
+    "lon": -76.0834611,
+    "display_name": "Dillon Drive, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "DILLON DRIVE": {
+    "lat": 36.8315196,
+    "lon": -76.0834611,
+    "display_name": "Dillon Drive, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "DONNA DR": {
+    "lat": 36.8477114,
+    "lon": -76.0257892,
+    "display_name": "Donna Drive, Virginia Beach, Virginia, 23454, United States"
+  },
+  "DRAKESMILE RD": {
+    "lat": 36.7878713,
+    "lon": -76.0680106,
+    "display_name": "Drakesmile Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "E PLANTATION RD": {
+    "lat": 36.8461018,
+    "lon": -76.0447915,
+    "display_name": "East Plantation Road, Point O'Woods, London Bridge, Virginia Beach, Virginia, 23454, United States"
+  },
+  "EAGLEWOOD DR": {
+    "lat": 36.7904733,
+    "lon": -76.0035407,
+    "display_name": "Eaglewood Drive, Redwing, Virginia Beach, Virginia, 23454, United States"
+  },
+  "EAST MALL DRIVE": {
+    "lat": 36.8164161,
+    "lon": -76.0675272,
+    "display_name": "East Mall Drive, Virginia Beach, Virginia, 23453, United States"
+  },
+  "EDINBURGH DR": {
+    "lat": 36.84626,
+    "lon": -76.0980495,
+    "display_name": "Edinburgh Drive, Malibu, Virginia Beach, Virginia, 23452, United States"
+  },
+  "EDISON RD": {
+    "lat": 36.7789042,
+    "lon": -76.0016512,
+    "display_name": "Edison Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "ELSON GREEN AV": {
+    "lat": 36.7544426,
+    "lon": -76.0140127,
+    "display_name": "Elson Green Avenue, Nimmo, Virginia Beach, Virginia, 23456, United States"
+  },
+  "ELSON GREEN AVE": {
+    "lat": 36.7534387,
+    "lon": -75.9992112,
+    "display_name": "Elson Green Avenue, Red Mill, Nimmo, Virginia Beach, Virginia, 23461, United States"
+  },
+  "ESPLANADE DR": {
+    "lat": 36.740125,
+    "lon": -76.0425734,
+    "display_name": "Esplanade Drive, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "ESTATES DR": {
+    "lat": 36.8973733,
+    "lon": -76.076264,
+    "display_name": "Estates Drive, Virginia Beach, Virginia, 23459, United States"
+  },
+  "EVEREST CI": {
+    "lat": 36.7819148,
+    "lon": -75.996439,
+    "display_name": "Everest Circle, Upton Estates, Virginia Beach, Virginia, 23454, United States"
+  },
+  "FALLING SUN CI": {
+    "lat": 36.7583599,
+    "lon": -75.9998381,
+    "display_name": "Falling Sun Circle, Red Mill, Nimmo, Virginia Beach, Virginia, 23461, United States"
+  },
+  "FIRST COLONIAL": {
+    "lat": 36.8730024,
+    "lon": -76.0286502,
+    "display_name": "First Colonial High School, 1272, Mill Dam Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "FIRST COLONIAL ROAD": {
+    "lat": 36.8740676,
+    "lon": -76.0380732,
+    "display_name": "First Colonial Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "GALVANI DR": {
+    "lat": 36.7812535,
+    "lon": -75.9863397,
+    "display_name": "Galvani Drive, Pine Meadows, Virginia Beach, Virginia, 23461, United States"
+  },
+  "GENERAL BOOTH": {
+    "lat": 36.8236425,
+    "lon": -75.9779043,
+    "display_name": "General Booth Boulevard, Rudee Heights, Virginia Beach, Virginia, 23454, United States"
+  },
+  "GENERAL BOOTH BL": {
+    "lat": 36.8236425,
+    "lon": -75.9779043,
+    "display_name": "General Booth Boulevard, Rudee Heights, Virginia Beach, Virginia, 23454, United States"
+  },
+  "GENERAL BOOTH BLVD": {
+    "lat": 36.8236425,
+    "lon": -75.9779043,
+    "display_name": "General Booth Boulevard, Rudee Heights, Virginia Beach, Virginia, 23454, United States"
+  },
+  "GENERAL BOOTH BLVD.": {
+    "lat": 36.8199553,
+    "lon": -75.9834964,
+    "display_name": "General Booth Boulevard, Rudee Heights, Virginia Beach, Virginia, 23454, United States"
+  },
+  "GENERAL BOOTH BOULEVARD": {
+    "lat": 36.8199553,
+    "lon": -75.9834964,
+    "display_name": "General Booth Boulevard, Rudee Heights, Virginia Beach, Virginia, 23454, United States"
+  },
+  "GEORGE MASON DR": {
+    "lat": 36.7502955,
+    "lon": -76.0592434,
+    "display_name": "George Mason Drive, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "GLADIOLA CR": {
+    "lat": 36.8008582,
+    "lon": -76.0874689,
+    "display_name": "Gladiola Crescent, Green Run, Virginia Beach, Virginia, 23453, United States"
+  },
+  "GOOD HOPE ROAD": {
+    "lat": 36.8192039,
+    "lon": -76.0953839,
+    "display_name": "Good Hope Road, Pecan Gardens, Virginia Beach, Virginia, 23452, United States"
+  },
+  "GREAT NECK": {
+    "lat": 36.9019045,
+    "lon": -76.0854262,
+    "display_name": "Great Neck Point, Virginia Beach, Virginia, 23459, United States"
+  },
+  "GREAT NECK N": {
+    "lat": 36.897505,
+    "lon": -76.0591903,
+    "display_name": "Great Neck Middle School, 1848, North Great Neck Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "GREAT NECK RD": {
+    "lat": 36.8692377,
+    "lon": -76.0421043,
+    "display_name": "North Great Neck Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "GREAT NECK RD W": {
+    "lat": 36.8850963,
+    "lon": -76.04816,
+    "display_name": "North Great Neck Road, Great Neck Estates, Virginia Beach, Virginia, 23451, United States"
+  },
+  "GREAT NECK ROAD N": {
+    "lat": 36.8850963,
+    "lon": -76.04816,
+    "display_name": "North Great Neck Road, Great Neck Estates, Virginia Beach, Virginia, 23451, United States"
+  },
+  "GREEN GARDEN CIR": {
+    "lat": 36.7978286,
+    "lon": -76.0922844,
+    "display_name": "Green Garden Circle, Green Run, Virginia Beach, Virginia, 23453, United States"
+  },
+  "GUM BRIDGE RD": {
+    "lat": 36.6738169,
+    "lon": -76.0041131,
+    "display_name": "Gum Bridge Road, Virginia Beach, Virginia, United States"
+  },
+  "HALEY DR": {
+    "lat": 36.8127271,
+    "lon": -76.0929489,
+    "display_name": "Haley Drive, Virginia Beach, Virginia, 23452, United States"
+  },
+  "HARPERS RD": {
+    "lat": 36.7824955,
+    "lon": -76.0417465,
+    "display_name": "Harpers Road, Colony Acres, Virginia Beach, Virginia, 23456, United States"
+  },
+  "HARPERS ROAD": {
+    "lat": 36.7824955,
+    "lon": -76.0417465,
+    "display_name": "Harpers Road, Colony Acres, Virginia Beach, Virginia, 23456, United States"
+  },
+  "HARRIS RD": {
+    "lat": 36.8764378,
+    "lon": -76.0859236,
+    "display_name": "Harris Road, Lynnwood, Virginia Beach, Virginia, 23452, United States"
+  },
+  "HEFFINGTON DR": {
+    "lat": 36.7256747,
+    "lon": -76.0999718,
+    "display_name": "Heffington Drive, Virginia Beach, Virginia, 23456, United States"
+  },
+  "HILBER ST": {
+    "lat": 36.8372598,
+    "lon": -76.0934587,
+    "display_name": "Hilber Street, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "HILBER STREET": {
+    "lat": 36.8372598,
+    "lon": -76.0934587,
+    "display_name": "Hilber Street, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "HILLTOP SC": {
+    "lat": 36.8517505,
+    "lon": -76.0245374,
+    "display_name": "Hilltop Marketplace, Virginia Beach, Virginia, United States"
+  },
+  "HOLLAND ROAD": {
+    "lat": 36.8061469,
+    "lon": -76.0906309,
+    "display_name": "Holland Road, The Lakes, Virginia Beach, Virginia, 23453, United States"
+  },
+  "HOLLY RD": {
+    "lat": 36.8725299,
+    "lon": -75.9852492,
+    "display_name": "Holly Road, Cavalier Park, Virginia Beach, Virginia, 23451, United States"
+  },
+  "HOPE AV": {
+    "lat": 36.8393006,
+    "lon": -75.9961246,
+    "display_name": "Hope Avenue, Virginia Beach, Virginia, 23451, United States"
+  },
+  "HOSPITAL DR": {
+    "lat": 36.8312521,
+    "lon": -76.0809105,
+    "display_name": "Hospital Drive, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "HOSPITAL DRIVE": {
+    "lat": 36.8312521,
+    "lon": -76.0809105,
+    "display_name": "Hospital Drive, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "HUMMINGBIRD LA": {
+    "lat": 36.7878911,
+    "lon": -76.0051232,
+    "display_name": "Hummingbird Lane, Redwing, Virginia Beach, Virginia, 23454, United States"
+  },
+  "I 64 WEST": {
+    "lat": 36.8522194,
+    "lon": -76.0214984,
+    "display_name": "Hilltop West Shopping Center, Virginia Beach, Virginia, United States"
+  },
+  "I264": {
+    "lat": 36.8496579,
+    "lon": -75.9760751,
+    "display_name": "Virginia Beach, Virginia, United States"
+  },
+  "INTERNATIONAL PARKWAY": {
+    "lat": 36.8098374,
+    "lon": -76.0565693,
+    "display_name": "International Parkway, Virginia Beach, Virginia, 23453, United States"
+  },
+  "INTERNATIONAL PKWY": {
+    "lat": 36.8083494,
+    "lon": -76.0547735,
+    "display_name": "International Parkway, Virginia Beach, Virginia, 23453, United States"
+  },
+  "INTERNATIONAL PW": {
+    "lat": 36.8083494,
+    "lon": -76.0547735,
+    "display_name": "International Parkway, Virginia Beach, Virginia, 23453, United States"
+  },
+  "JARVIS RD": {
+    "lat": 36.6846475,
+    "lon": -76.0302821,
+    "display_name": "Jarvis Road, Virginia Beach, Virginia, United States"
+  },
+  "JEFFERSON AVE": {
+    "lat": 36.8150273,
+    "lon": -75.9805322,
+    "display_name": "Jefferson Avenue, Virginia Beach, Virginia, 23461, United States"
+  },
+  "JOAN TERR": {
+    "lat": 36.8316319,
+    "lon": -76.0868884,
+    "display_name": "Joan Terrace, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "KING RICHARD DR": {
+    "lat": 36.8463972,
+    "lon": -76.0889868,
+    "display_name": "King Richard Drive, Malibu, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "KINGS ARMS DR": {
+    "lat": 36.8104714,
+    "lon": -76.0788166,
+    "display_name": "Kings Arms Drive, Kings Arm, Virginia Beach, Virginia, 23452, United States"
+  },
+  "KINGS ARMS DRIVE": {
+    "lat": 36.8104714,
+    "lon": -76.0788166,
+    "display_name": "Kings Arms Drive, Kings Arm, Virginia Beach, Virginia, 23452, United States"
+  },
+  "KINGS GRANT": {
+    "lat": 36.8557037,
+    "lon": -76.0835445,
+    "display_name": "Kings Grant, Virginia Beach, Virginia, 23452, United States"
+  },
+  "KINGS GRANT RD": {
+    "lat": 36.8595424,
+    "lon": -76.0882262,
+    "display_name": "Kings Grant Road, Kings Grant, Virginia Beach, Virginia, 23452, United States"
+  },
+  "KINGSFIELD DR": {
+    "lat": 36.733636,
+    "lon": -76.0536125,
+    "display_name": "Kingsfield Drive, Kingston Estates, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "LAMPLIGHT LA": {
+    "lat": 36.812688,
+    "lon": -76.0813938,
+    "display_name": "Lamplight Lane, Kings Arm, Virginia Beach, Virginia, 23452, United States"
+  },
+  "LANDSTOWN CENTRE WAY": {
+    "lat": 36.7692345,
+    "lon": -76.0899845,
+    "display_name": "Landstown Centre Way, Landstown, Virginia Beach, Virginia, 23453, United States"
+  },
+  "LANDSTOWN CENTRE WY": {
+    "lat": 36.7723144,
+    "lon": -76.0880968,
+    "display_name": "Landstown Centre Way, Landstown, Virginia Beach, Virginia, 23453, United States"
+  },
+  "LANDSTOWN COURT": {
+    "lat": 36.7782061,
+    "lon": -76.0898378,
+    "display_name": "Landstown Court, Landstown, Virginia Beach, Virginia, 23456, United States"
+  },
+  "LANDSTOWN RD": {
+    "lat": 36.7601026,
+    "lon": -76.0941266,
+    "display_name": "Landstown Road, Landstown, Virginia Beach, Virginia, 23456, United States"
+  },
+  "LANDSTOWN ROAD": {
+    "lat": 36.7601026,
+    "lon": -76.0941266,
+    "display_name": "Landstown Road, Landstown, Virginia Beach, Virginia, 23456, United States"
+  },
+  "LAS CRUCES DR": {
+    "lat": 36.7717962,
+    "lon": -76.0081602,
+    "display_name": "Las Cruces Drive, Nimmo, Virginia Beach, Virginia, 23454, United States"
+  },
+  "LASKIN": {
+    "lat": 36.8494638,
+    "lon": -76.0279186,
+    "display_name": "Laskin Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "LASKIN  RD": {
+    "lat": 36.8572051,
+    "lon": -75.9896376,
+    "display_name": "Laskin Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "LASKIN ROAD": {
+    "lat": 36.8511952,
+    "lon": -76.0182839,
+    "display_name": "Laskin Road, Laurel Manor, Virginia Beach, Virginia, 23451, United States"
+  },
+  "LEE HIGHLANDS BL": {
+    "lat": 36.8215341,
+    "lon": -76.0802504,
+    "display_name": "Lee Highlands Boulevard, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "LEROY DR": {
+    "lat": 36.7485592,
+    "lon": -76.0372122,
+    "display_name": "Leroy Road, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "LESNER BRIDGE": {
+    "lat": 36.9075437,
+    "lon": -76.0918946,
+    "display_name": "John A Lesner Bridge, Chic's Beach Underpass (BSB), Virginia Beach, Virginia, 23459, United States"
+  },
+  "LINEBERRY ROAD": {
+    "lat": 36.8281241,
+    "lon": -76.0858143,
+    "display_name": "Lineberry Road, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "LITTLE NECK RD": {
+    "lat": 36.8585939,
+    "lon": -76.0869572,
+    "display_name": "Little Neck Road, Kings Grant, Virginia Beach, Virginia, 23452, United States"
+  },
+  "LITTLE NECK RD W": {
+    "lat": 36.8417429,
+    "lon": -76.0909633,
+    "display_name": "Little Neck Road, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "LONDON BRIDGE ROAD": {
+    "lat": 36.7817907,
+    "lon": -76.0470248,
+    "display_name": "London Bridge Road, Colony Acres, Virginia Beach, Virginia, 23456, United States"
+  },
+  "LYNNHAVEN": {
+    "lat": 36.8376485,
+    "lon": -76.0685439,
+    "display_name": "Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "LYNNHAVEN DR": {
+    "lat": 36.9063628,
+    "lon": -76.0848172,
+    "display_name": "Lynnhaven Drive, Lynnhaven Shores, Virginia Beach, Virginia, 23451, United States"
+  },
+  "LYNNHAVEN MALL LO": {
+    "lat": 36.8166556,
+    "lon": -76.0710404,
+    "display_name": "Lynnhaven Mall, Virginia Beach, Virginia, United States"
+  },
+  "LYNNHAVEN MALL LOOP": {
+    "lat": 36.8172443,
+    "lon": -76.0740558,
+    "display_name": "Lynnhaven Mall Loop, Lamplight Manor, Virginia Beach, Virginia, 23452, United States"
+  },
+  "LYNNHAVEN MALL LP": {
+    "lat": 36.8172443,
+    "lon": -76.0740558,
+    "display_name": "Lynnhaven Mall Loop, Lamplight Manor, Virginia Beach, Virginia, 23452, United States"
+  },
+  "LYNNHAVEN N": {
+    "lat": 36.8201682,
+    "lon": -76.0725549,
+    "display_name": "Lynnhaven North, Lynnhaven, Virginia Beach, Virginia, United States"
+  },
+  "LYNNHAVEN N  RD": {
+    "lat": 36.8414317,
+    "lon": -76.0698401,
+    "display_name": "North Lynnhaven Road, Pinewood Gardens, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "LYNNHAVEN RD": {
+    "lat": 36.8328202,
+    "lon": -76.0718687,
+    "display_name": "South Lynnhaven Road, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "LYNNHAVEN RD N": {
+    "lat": 36.8296503,
+    "lon": -76.0763851,
+    "display_name": "South Lynnhaven Road, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "LYNNHAVEN RD S": {
+    "lat": 36.8328202,
+    "lon": -76.0718687,
+    "display_name": "South Lynnhaven Road, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "MAGIC HOLLOW BL": {
+    "lat": 36.805,
+    "lon": -76.0716667,
+    "display_name": "Magic Hollow, Virginia Beach, Virginia, 23453, United States"
+  },
+  "MALIBU DRIVE": {
+    "lat": 36.845077,
+    "lon": -76.0957493,
+    "display_name": "Malibu Drive, Malibu, Virginia Beach, Virginia, 23452, United States"
+  },
+  "MAPLE ST": {
+    "lat": 36.9106696,
+    "lon": -76.0631356,
+    "display_name": "Maple Street, Cape Story by the Sea, Virginia Beach, Virginia, 23459, United States"
+  },
+  "MARYLAND AV": {
+    "lat": 36.835712,
+    "lon": -75.9811857,
+    "display_name": "Maryland Avenue, Shadowlawn Heights, Virginia Beach, Virginia, 23451, United States"
+  },
+  "MEDITERRANEAN AV": {
+    "lat": 36.8407749,
+    "lon": -75.9802041,
+    "display_name": "Mediterranean Avenue, Lake View, Virginia Beach, Virginia, 23451, United States"
+  },
+  "MEDITERRANEAN AVE": {
+    "lat": 36.8348767,
+    "lon": -75.9786054,
+    "display_name": "Mediterranean Avenue, Shore Acres, Virginia Beach, Virginia, 23451, United States"
+  },
+  "MELINDA PLACE": {
+    "lat": 36.8315952,
+    "lon": -76.0913663,
+    "display_name": "Melinda Place, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "MICHAEL LA BOUVE DRIVE": {
+    "lat": 36.7869994,
+    "lon": -76.097161,
+    "display_name": "Michael La Bouve Drive, Virginia Beach, Virginia, 23453, United States"
+  },
+  "MILL DAM RD": {
+    "lat": 36.8688672,
+    "lon": -76.0321861,
+    "display_name": "Mill Dam Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "MONET DR": {
+    "lat": 36.7776898,
+    "lon": -76.077986,
+    "display_name": "Monet Drive, Landstown, Virginia Beach, Virginia, 23453, United States"
+  },
+  "MONTOUR CT": {
+    "lat": 36.7770287,
+    "lon": -76.0819678,
+    "display_name": "Montour Court, Landstown, Virginia Beach, Virginia, 23453, United States"
+  },
+  "MUDDY CREEK RD": {
+    "lat": 36.691289,
+    "lon": -75.9804827,
+    "display_name": "Muddy Creek Road, Virginia Beach, Virginia, United States"
+  },
+  "MUDDY CREEK RD N": {
+    "lat": 36.6794073,
+    "lon": -75.9839843,
+    "display_name": "Muddy Creek Road, Virginia Beach, Virginia, 23457, United States"
+  },
+  "MUDDY CREEK ROAD": {
+    "lat": 36.691289,
+    "lon": -75.9804827,
+    "display_name": "Muddy Creek Road, Virginia Beach, Virginia, United States"
+  },
+  "N . BIRDNECK RD": {
+    "lat": 36.8383774,
+    "lon": -75.9985844,
+    "display_name": "North Birdneck Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "N BIRDNECK RD": {
+    "lat": 36.8394788,
+    "lon": -75.9978496,
+    "display_name": "North Birdneck Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "N GREAT GREAT RD": {
+    "lat": 36.8692377,
+    "lon": -76.0421043,
+    "display_name": "North Great Neck Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "N GREAT NECK": {
+    "lat": 36.8818145,
+    "lon": -76.0499323,
+    "display_name": "Great Neck Estates, Virginia Beach, Virginia, 23451, United States"
+  },
+  "N GREAT NECK RD": {
+    "lat": 36.8850963,
+    "lon": -76.04816,
+    "display_name": "North Great Neck Road, Great Neck Estates, Virginia Beach, Virginia, 23451, United States"
+  },
+  "N GREAT NECK ROAD": {
+    "lat": 36.8850963,
+    "lon": -76.04816,
+    "display_name": "North Great Neck Road, Great Neck Estates, Virginia Beach, Virginia, 23451, United States"
+  },
+  "N LYNNHAVEN RD": {
+    "lat": 36.8414317,
+    "lon": -76.0698401,
+    "display_name": "North Lynnhaven Road, Pinewood Gardens, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "N MUDDY CREEK RD": {
+    "lat": 36.7118855,
+    "lon": -75.9988294,
+    "display_name": "North Muddy Creek Road, Pungo, Virginia Beach, Virginia, United States"
+  },
+  "N ROSEMONT": {
+    "lat": 36.8400806,
+    "lon": -76.0976689,
+    "display_name": "North Rosemont Road, Virginia Beach, Virginia, 23452, United States"
+  },
+  "N. GREAT NECK RD": {
+    "lat": 36.8692377,
+    "lon": -76.0421043,
+    "display_name": "North Great Neck Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "NANSEMOND LOOP": {
+    "lat": 36.7412575,
+    "lon": -76.0798501,
+    "display_name": "Nansemond Loop, Virginia Beach, Virginia, 23456, United States"
+  },
+  "NESTLEBROOK TRAIL": {
+    "lat": 36.7238254,
+    "lon": -76.0587195,
+    "display_name": "Nestlebrook Trail, Virginia Beach, Virginia, 23456, United States"
+  },
+  "NEVAN RD": {
+    "lat": 36.8495413,
+    "lon": -76.0201226,
+    "display_name": "Nevan Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "NEW BRIDGE RD": {
+    "lat": 36.7244692,
+    "lon": -75.992286,
+    "display_name": "New Bridge Road, Pungo, Virginia Beach, Virginia, United States"
+  },
+  "NIMMO PARKWAY": {
+    "lat": 36.7573796,
+    "lon": -75.995436,
+    "display_name": "Nimmo Parkway, Mirasol, Nimmo, Virginia Beach, Virginia, 23461, United States"
+  },
+  "NIMMO PKWY": {
+    "lat": 36.7552874,
+    "lon": -75.9896199,
+    "display_name": "Nimmo Parkway, Virginia Beach, Virginia, 23461, United States"
+  },
+  "NIMMO PW": {
+    "lat": 36.763484,
+    "lon": -76.0196609,
+    "display_name": "Nimmo Parkway, Nimmo, Virginia Beach, Virginia, 23456, United States"
+  },
+  "NORFOLK AV": {
+    "lat": 36.8377363,
+    "lon": -75.9842491,
+    "display_name": "Norfolk Avenue, Virginia Beach, Virginia, 23451, United States"
+  },
+  "NORFOLK AVE": {
+    "lat": 36.8379525,
+    "lon": -75.9948191,
+    "display_name": "Norfolk Avenue, Virginia Beach, Virginia, 23451, United States"
+  },
+  "NORTH BIRDNECK RD": {
+    "lat": 36.8383774,
+    "lon": -75.9985844,
+    "display_name": "North Birdneck Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "NORTH BIRDNECK ROAD": {
+    "lat": 36.8394788,
+    "lon": -75.9978496,
+    "display_name": "North Birdneck Road, Virginia Beach, Virginia, 23451, United States"
+  },
+  "NORTH GREAT NECK RD": {
+    "lat": 36.8850963,
+    "lon": -76.04816,
+    "display_name": "North Great Neck Road, Great Neck Estates, Virginia Beach, Virginia, 23451, United States"
+  },
+  "NORTH LANDING RD": {
+    "lat": 36.7452947,
+    "lon": -76.0693581,
+    "display_name": "North Landing Road, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "NORTH LANDING ROAD": {
+    "lat": 36.7452947,
+    "lon": -76.0693581,
+    "display_name": "North Landing Road, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "NORTH MALL DR": {
+    "lat": 36.8205471,
+    "lon": -76.0688951,
+    "display_name": "North Mall Drive, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "NORTH MUDDY CREEK ROAD": {
+    "lat": 36.7118855,
+    "lon": -75.9988294,
+    "display_name": "North Muddy Creek Road, Pungo, Virginia Beach, Virginia, United States"
+  },
+  "NORTHWOOD DR": {
+    "lat": 36.8071528,
+    "lon": -76.0982092,
+    "display_name": "Northwood Drive, Virginia Beach, Virginia, 23453, United States"
+  },
+  "OCEAN SHORE AV": {
+    "lat": 36.9081256,
+    "lon": -76.0875562,
+    "display_name": "Ocean Shore Avenue, Lynnhaven Shores, Virginia Beach, Virginia, 23459, United States"
+  },
+  "OCEANA BL": {
+    "lat": 36.8420929,
+    "lon": -76.0129864,
+    "display_name": "Oceana, Virginia Beach, Virginia, 23454, United States"
+  },
+  "OCEANA BLVD": {
+    "lat": 36.8388782,
+    "lon": -76.0191514,
+    "display_name": "Oceana Boulevard, Oceana, Virginia Beach, Virginia, 23454, United States"
+  },
+  "OCEANA BOULEVARD": {
+    "lat": 36.8387219,
+    "lon": -76.018681,
+    "display_name": "Oceana Boulevard, Oceana, Virginia Beach, Virginia, 23454, United States"
+  },
+  "OLD CLUBHOUSE RD": {
+    "lat": 36.80159,
+    "lon": -76.0772047,
+    "display_name": "Old Clubhouse Road, Cardinal Estates, Virginia Beach, Virginia, 23453, United States"
+  },
+  "OLD DAM NECK RD": {
+    "lat": 36.7811686,
+    "lon": -75.9920401,
+    "display_name": "Old Dam Neck Road, Virginia Beach, Virginia, 23461, United States"
+  },
+  "OLD DONATION PARKWAY": {
+    "lat": 36.8640414,
+    "lon": -76.0449107,
+    "display_name": "Old Donation Parkway, Virginia Beach, Virginia, 23451, United States"
+  },
+  "OLD DONATION PKWY": {
+    "lat": 36.8636823,
+    "lon": -76.042281,
+    "display_name": "Old Donation Parkway, Virginia Beach, Virginia, 23451, United States"
+  },
+  "OLD DONATION PW": {
+    "lat": 36.8636823,
+    "lon": -76.042281,
+    "display_name": "Old Donation Parkway, Virginia Beach, Virginia, 23451, United States"
+  },
+  "OLD GREAT NECK RD": {
+    "lat": 36.8497679,
+    "lon": -76.048713,
+    "display_name": "Old Great Neck Road, Point O'Woods, London Bridge, Lynnhaven, Virginia Beach, Virginia, 23454, United States"
+  },
+  "OLD VIRGINIA BEACH RD": {
+    "lat": 36.8486623,
+    "lon": -75.9882526,
+    "display_name": "Old Virginia Beach Road, Salt Meadow Bay Condominiums, Virginia Beach, Virginia, 23451, United States"
+  },
+  "OLD VIRGINIA RD": {
+    "lat": 36.8492523,
+    "lon": -75.9875799,
+    "display_name": "Old Virginia Beach Road, Salt Meadow Bay Condominiums, Virginia Beach, Virginia, 23451, United States"
+  },
+  "OXFORD DR": {
+    "lat": 36.8581263,
+    "lon": -76.0912674,
+    "display_name": "Oxford Drive, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "PACIFIC AV": {
+    "lat": 36.8406588,
+    "lon": -75.9742938,
+    "display_name": "Pacific Avenue, Virginia Beach, Virginia, 23451, United States"
+  },
+  "PACIFIC AVE": {
+    "lat": 36.8642109,
+    "lon": -75.9806129,
+    "display_name": "Pacific Avenue, Virginia Beach, Virginia, 23451, United States"
+  },
+  "PACIFIC AVENUE": {
+    "lat": 36.8329987,
+    "lon": -75.9720988,
+    "display_name": "Pacific Avenue, Virginia Beach, Virginia, 23451, United States"
+  },
+  "PAGE AV": {
+    "lat": 36.9096521,
+    "lon": -76.0844144,
+    "display_name": "Page Avenue, Lynnhaven Shores, Virginia Beach, Virginia, 23451, United States"
+  },
+  "PAGE AVE": {
+    "lat": 36.9096521,
+    "lon": -76.0844144,
+    "display_name": "Page Avenue, Lynnhaven Shores, Virginia Beach, Virginia, 23451, United States"
+  },
+  "PARKS AVE": {
+    "lat": 36.8409192,
+    "lon": -75.9841524,
+    "display_name": "Parks Avenue, Virginia Beach, Virginia, 23451, United States"
+  },
+  "PAVILION DR": {
+    "lat": 36.845837,
+    "lon": -75.9930453,
+    "display_name": "Pavilion Drive, Virginia Beach, Virginia, 23451, United States"
+  },
+  "PEELE CT": {
+    "lat": 36.800925,
+    "lon": -76.0818595,
+    "display_name": "Peele Court, Virginia Beach, Virginia, 23453, United States"
+  },
+  "PINEWOOD RD": {
+    "lat": 36.8625831,
+    "lon": -75.9916701,
+    "display_name": "Pinewood Road, Linkhorn Park, Virginia Beach, Virginia, 23451, United States"
+  },
+  "PINEY WOODS LA": {
+    "lat": 36.7701267,
+    "lon": -76.0354569,
+    "display_name": "Piney Woods Lane, Nimmo, Virginia Beach, Virginia, 23456, United States"
+  },
+  "PLAZA  TRL": {
+    "lat": 36.8414122,
+    "lon": -76.0910535,
+    "display_name": "North Plaza Trail, Virginia Beach, Virginia, 23452, United States"
+  },
+  "PLAZA N TRL": {
+    "lat": 36.8414122,
+    "lon": -76.0910535,
+    "display_name": "North Plaza Trail, Virginia Beach, Virginia, 23452, United States"
+  },
+  "PLEASANT ACRES DR": {
+    "lat": 36.7685989,
+    "lon": -76.0636127,
+    "display_name": "Pleasant Acres Drive, Princess Anne, Virginia Beach, Virginia, 23453, United States"
+  },
+  "PLEASANT RIDGE RD": {
+    "lat": 36.690577,
+    "lon": -76.0120626,
+    "display_name": "Pleasant Ridge Road, Virginia Beach, Virginia, United States"
+  },
+  "POTTERS RD": {
+    "lat": 36.8359312,
+    "lon": -76.0568699,
+    "display_name": "Potters Road, Cheltenham Square, London Bridge, Lynnhaven, Virginia Beach, Virginia, 23454, United States"
+  },
+  "POTTERS ROAD": {
+    "lat": 36.8359312,
+    "lon": -76.0568699,
+    "display_name": "Potters Road, Cheltenham Square, London Bridge, Lynnhaven, Virginia Beach, Virginia, 23454, United States"
+  },
+  "PRIMROSE LA": {
+    "lat": 36.7963399,
+    "lon": -76.0926766,
+    "display_name": "Primrose Lane, Green Run, Virginia Beach, Virginia, 23456, United States"
+  },
+  "PRINCESS ANNE": {
+    "lat": 36.7515388,
+    "lon": -76.0529875,
+    "display_name": "Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "PROSPERITY RD": {
+    "lat": 36.80268,
+    "lon": -75.985615,
+    "display_name": "Prosperity Road, Virginia Beach, Virginia, 23461, United States"
+  },
+  "PROSPERITY ROAD": {
+    "lat": 36.80268,
+    "lon": -75.985615,
+    "display_name": "Prosperity Road, Virginia Beach, Virginia, 23461, United States"
+  },
+  "QUEENS WY": {
+    "lat": 36.8536575,
+    "lon": -76.038888,
+    "display_name": "Queens Way, Virginia Beach, Virginia, 23454, United States"
+  },
+  "QUEENSBURY DR": {
+    "lat": 36.8572707,
+    "lon": -76.0821829,
+    "display_name": "Queensbury Drive, Kings Grant, Virginia Beach, Virginia, 23452, United States"
+  },
+  "RANCHERO ED": {
+    "lat": 36.7534698,
+    "lon": -75.9910543,
+    "display_name": "Ranchero Road, Lagomar, Virginia Beach, Virginia, 23461, United States"
+  },
+  "REAGAN AV": {
+    "lat": 36.8495078,
+    "lon": -76.0556533,
+    "display_name": "Reagan Avenue, London Bridge, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "RED MAPLE LANE": {
+    "lat": 36.8326963,
+    "lon": -76.0801154,
+    "display_name": "Red Maple Lane, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "REGENCY DR": {
+    "lat": 36.8485142,
+    "lon": -76.0330564,
+    "display_name": "Regency Drive, Virginia Beach, Virginia, 23454, United States"
+  },
+  "REPUBLIC RD": {
+    "lat": 36.8514485,
+    "lon": -76.0268241,
+    "display_name": "Republic Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "REYNARD DR": {
+    "lat": 36.8494783,
+    "lon": -76.0111848,
+    "display_name": "Reynard Drive, Virginia Beach, Virginia, 23451, United States"
+  },
+  "RIDDLE AVE": {
+    "lat": 36.8415197,
+    "lon": -76.0279988,
+    "display_name": "Riddle Avenue, Virginia Beach, Virginia, 23454, United States"
+  },
+  "RIVERBEND RD": {
+    "lat": 36.8046524,
+    "lon": -76.0848385,
+    "display_name": "Riverbend Road, The Lakes, Virginia Beach, Virginia, 23452, United States"
+  },
+  "ROSEGATE PL": {
+    "lat": 36.8397525,
+    "lon": -76.0850445,
+    "display_name": "Rosegate Place, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "ROSEMONT RD": {
+    "lat": 36.8349784,
+    "lon": -76.0956324,
+    "display_name": "South Rosemont Road, Virginia Beach, Virginia, 23452, United States"
+  },
+  "ROSEMONT RD N": {
+    "lat": 36.8397594,
+    "lon": -76.0975259,
+    "display_name": "North Rosemont Road, Virginia Beach, Virginia, 23452, United States"
+  },
+  "ROSSINI DR": {
+    "lat": 36.772873,
+    "lon": -76.0044417,
+    "display_name": "Rossini Drive, Malbon Acres, Nimmo, Virginia Beach, Virginia, 23454, United States"
+  },
+  "S CLUBHOUSE RD": {
+    "lat": 36.7425429,
+    "lon": -75.9827364,
+    "display_name": "Hell's Point Golf Clubhouse, Atwoodtown Road, Lagomar, Virginia Beach, Virginia, 23456, United States"
+  },
+  "S PLAZA TRAIL": {
+    "lat": 36.8364939,
+    "lon": -76.0891796,
+    "display_name": "South Plaza Trail, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "S PLAZA TRL": {
+    "lat": 36.8364939,
+    "lon": -76.0891796,
+    "display_name": "South Plaza Trail, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "S ROSEMONT RD": {
+    "lat": 36.8091449,
+    "lon": -76.0993775,
+    "display_name": "South Rosemont Road, Virginia Beach, Virginia, 23453, United States"
+  },
+  "S ROSEMONT ROAD": {
+    "lat": 36.8091449,
+    "lon": -76.0993775,
+    "display_name": "South Rosemont Road, Virginia Beach, Virginia, 23453, United States"
+  },
+  "S. ROSEMONT": {
+    "lat": 36.7954487,
+    "lon": -76.0987162,
+    "display_name": "South Rosemont Road, Virginia Beach, Virginia, 23453, United States"
+  },
+  "S. ROSEMONT RD": {
+    "lat": 36.8091449,
+    "lon": -76.0993775,
+    "display_name": "South Rosemont Road, Virginia Beach, Virginia, 23453, United States"
+  },
+  "SABRE ST": {
+    "lat": 36.8224319,
+    "lon": -76.0729634,
+    "display_name": "Sabre Street, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SANDBRIDGE RD": {
+    "lat": 36.7335253,
+    "lon": -75.9891307,
+    "display_name": "Sandbridge Road, Virginia Beach, Virginia, 23456, United States"
+  },
+  "SANDBRIDGE ROAD": {
+    "lat": 36.7335253,
+    "lon": -75.9891307,
+    "display_name": "Sandbridge Road, Virginia Beach, Virginia, 23456, United States"
+  },
+  "SANDFIDDLER RD": {
+    "lat": 36.7540599,
+    "lon": -75.9475071,
+    "display_name": "Sandfiddler Road, Sandbridge Beach, Virginia Beach, Virginia, 23461, United States"
+  },
+  "SANDFIDDLER ROAD": {
+    "lat": 36.7540599,
+    "lon": -75.9475071,
+    "display_name": "Sandfiddler Road, Sandbridge Beach, Virginia Beach, Virginia, 23461, United States"
+  },
+  "SANDPIPER RD": {
+    "lat": 36.7170826,
+    "lon": -75.9345395,
+    "display_name": "Sandpiper Road, Sandbridge Beach, Virginia Beach, Virginia, United States"
+  },
+  "SCARBOROUGH WY": {
+    "lat": 36.8027777,
+    "lon": -76.0779098,
+    "display_name": "Scarborough Way, Cardinal Estates, Virginia Beach, Virginia, 23453, United States"
+  },
+  "SCARLET OAK DR": {
+    "lat": 36.8328473,
+    "lon": -76.075597,
+    "display_name": "Scarlet Oak Drive, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SEABOARD RD": {
+    "lat": 36.7584532,
+    "lon": -76.0330054,
+    "display_name": "Seaboard Road, Nimmo, Virginia Beach, Virginia, 23456, United States"
+  },
+  "SEABOARD ROAD": {
+    "lat": 36.7584532,
+    "lon": -76.0330054,
+    "display_name": "Seaboard Road, Nimmo, Virginia Beach, Virginia, 23456, United States"
+  },
+  "SENTARA WAY": {
+    "lat": 36.8352101,
+    "lon": -76.098987,
+    "display_name": "Sentara Way, Windsor Woods, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SENTARA WY": {
+    "lat": 36.8352101,
+    "lon": -76.098987,
+    "display_name": "Sentara Way, Windsor Woods, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SHADOW TREE WAY": {
+    "lat": 36.8068737,
+    "lon": -76.0929107,
+    "display_name": "Shadow Tree Way, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SHIPPS CORNER": {
+    "lat": 36.7920934,
+    "lon": -76.079933,
+    "display_name": "Shipps Corner, Virginia Beach, Virginia, 23453, United States"
+  },
+  "SHIPPS CORNER RD": {
+    "lat": 36.7936888,
+    "lon": -76.0753337,
+    "display_name": "Shipps Corner Road, Cardinal Estates, Virginia Beach, Virginia, 23453, United States"
+  },
+  "SHORE": {
+    "lat": 36.834807,
+    "lon": -75.9761422,
+    "display_name": "Shore Acres, Virginia Beach, Virginia, United States"
+  },
+  "SHORE DE": {
+    "lat": 36.834807,
+    "lon": -75.9761422,
+    "display_name": "Shore Acres, Virginia Beach, Virginia, United States"
+  },
+  "SHOREHAVEN DR": {
+    "lat": 36.8815894,
+    "lon": -76.0576239,
+    "display_name": "Shorehaven Drive, Great Neck Estates, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SIGNATURE DR": {
+    "lat": 36.7357328,
+    "lon": -76.0575485,
+    "display_name": "Signature Drive, Kingston Estates, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "SILINA DR": {
+    "lat": 36.8276197,
+    "lon": -76.0874034,
+    "display_name": "Silina Drive, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SILINA DRIVE": {
+    "lat": 36.8278797,
+    "lon": -76.0788222,
+    "display_name": "Silina Drive, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SKYLARK DR": {
+    "lat": 36.7972426,
+    "lon": -76.0751366,
+    "display_name": "Skylark Drive, Cardinal Estates, Virginia Beach, Virginia, 23456, United States"
+  },
+  "SOUTH BIRDNECK ROAD": {
+    "lat": 36.8175199,
+    "lon": -75.9987969,
+    "display_name": "South Birdneck Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "SOUTH BL": {
+    "lat": 36.8450655,
+    "lon": -75.9940997,
+    "display_name": "South Beach Apartments, Virginia Beach, Virginia, United States"
+  },
+  "SOUTH LYNNHAVEN": {
+    "lat": 36.8296503,
+    "lon": -76.0763851,
+    "display_name": "South Lynnhaven Road, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SOUTH LYNNHAVEN RD": {
+    "lat": 36.8328202,
+    "lon": -76.0718687,
+    "display_name": "South Lynnhaven Road, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SOUTH LYNNHAVEN ROAD": {
+    "lat": 36.8296503,
+    "lon": -76.0763851,
+    "display_name": "South Lynnhaven Road, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SOUTH PLAZA TRAIL": {
+    "lat": 36.8364939,
+    "lon": -76.0891796,
+    "display_name": "South Plaza Trail, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SOUTH PLAZA TRL": {
+    "lat": 36.8364939,
+    "lon": -76.0891796,
+    "display_name": "South Plaza Trail, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SOUTH ROSEMONT RD": {
+    "lat": 36.8091449,
+    "lon": -76.0993775,
+    "display_name": "South Rosemont Road, Virginia Beach, Virginia, 23453, United States"
+  },
+  "SOUTH ROSEMONT ROAD": {
+    "lat": 36.7954487,
+    "lon": -76.0987162,
+    "display_name": "South Rosemont Road, Virginia Beach, Virginia, 23453, United States"
+  },
+  "SOUTHERN BL": {
+    "lat": 36.7552778,
+    "lon": -76.0673987,
+    "display_name": "Southern Pine Apartments, 2520, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "ST": {
+    "lat": 36.8496579,
+    "lon": -75.9760751,
+    "display_name": "Virginia Beach, Virginia, United States"
+  },
+  "ST MARSHALL DR": {
+    "lat": 36.8619608,
+    "lon": -76.0409306,
+    "display_name": "Saint Marshall Drive, Wolfsnare Plantation, Virginia Beach, Virginia, 23451, United States"
+  },
+  "STANCIL COURT": {
+    "lat": 36.8322267,
+    "lon": -76.0859527,
+    "display_name": "Stancil Court, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "STAPLEFORD CH": {
+    "lat": 36.8742153,
+    "lon": -76.0801436,
+    "display_name": "Stapleford Chase, Virginia Beach, Virginia, 23452, United States"
+  },
+  "STONESHORE RD": {
+    "lat": 36.8055368,
+    "lon": -76.0965885,
+    "display_name": "Stoneshore Road, Virginia Beach, Virginia, 23452, United States"
+  },
+  "SYKES AV": {
+    "lat": 36.8405006,
+    "lon": -76.0093078,
+    "display_name": "Sykes Avenue, Atlantic Park, Virginia Beach, Virginia, 23454, United States"
+  },
+  "TAYLOR FARM RD": {
+    "lat": 36.7938911,
+    "lon": -76.0615508,
+    "display_name": "Taylor Farm Road, Virginia Beach, Virginia, 23453, United States"
+  },
+  "TERRAMAR LANE": {
+    "lat": 36.7318571,
+    "lon": -76.0132091,
+    "display_name": "Terramar Lane, Ranier Village at Ashville Park, Pungo, Virginia Beach, Virginia, 23456, United States"
+  },
+  "THREE OAKS DR": {
+    "lat": 36.7556807,
+    "lon": -76.0234584,
+    "display_name": "Three Oaks Drive, Nimmo, Virginia Beach, Virginia, 23456, United States"
+  },
+  "TIMBER NECK TRL": {
+    "lat": 36.8472652,
+    "lon": -76.0667139,
+    "display_name": "Timber Neck Trail, Chesopeian Colony, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "TOWER BRIDGE LO": {
+    "lat": 36.7746479,
+    "lon": -76.0377992,
+    "display_name": "Tower Bridge Loop, Nimmo, Virginia Beach, Virginia, 23456, United States"
+  },
+  "TOWNFIELD LANE": {
+    "lat": 36.7589145,
+    "lon": -75.9971922,
+    "display_name": "Townfield Lane, Red Mill, Nimmo, Virginia Beach, Virginia, 23461, United States"
+  },
+  "TREE GARDEN WY": {
+    "lat": 36.7522615,
+    "lon": -76.0193154,
+    "display_name": "Tree Garden Way, Nimmo, Virginia Beach, Virginia, 23456, United States"
+  },
+  "TWINFLOWER LN": {
+    "lat": 36.7710557,
+    "lon": -76.0809958,
+    "display_name": "Twinflower Lane, Landstown, Virginia Beach, Virginia, 23453, United States"
+  },
+  "UPTON DR": {
+    "lat": 36.7539122,
+    "lon": -76.0083106,
+    "display_name": "Upton Drive, Nimmo, Virginia Beach, Virginia, 23461, United States"
+  },
+  "UPTON DRIVE": {
+    "lat": 36.7539122,
+    "lon": -76.0083106,
+    "display_name": "Upton Drive, Nimmo, Virginia Beach, Virginia, 23461, United States"
+  },
+  "VICTORIA DR": {
+    "lat": 36.8320226,
+    "lon": -76.0891967,
+    "display_name": "Victoria Drive, Princess Anne Plaza, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "VIKING DR": {
+    "lat": 36.8295189,
+    "lon": -76.0660315,
+    "display_name": "Viking Drive, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "VILLAGE DR": {
+    "lat": 36.8466671,
+    "lon": -76.0279674,
+    "display_name": "Village Drive, Virginia Beach, Virginia, 23454, United States"
+  },
+  "VILLAGE RD": {
+    "lat": 36.8455645,
+    "lon": -76.0301508,
+    "display_name": "Village Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "VIRGINIA  BEACH": {
+    "lat": 36.7159724,
+    "lon": -76.0935474,
+    "display_name": "Virginia Beach Terminal, 3925, Virginia Beach, Virginia, 23456, United States"
+  },
+  "VIRGINIA AV": {
+    "lat": 36.8341729,
+    "lon": -75.9819128,
+    "display_name": "Virginia Avenue, Shadowlawn Heights, Virginia Beach, Virginia, 23451, United States"
+  },
+  "VIRGINIA BEACH": {
+    "lat": 36.7159724,
+    "lon": -76.0935474,
+    "display_name": "Virginia Beach Terminal, 3925, Virginia Beach, Virginia, 23456, United States"
+  },
+  "VIRGINIA BEACH B": {
+    "lat": 36.7159724,
+    "lon": -76.0935474,
+    "display_name": "Virginia Beach Terminal, 3925, Virginia Beach, Virginia, 23456, United States"
+  },
+  "W. NECK RD.": {
+    "lat": 36.7495162,
+    "lon": -76.0642373,
+    "display_name": "West Neck Road, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "WATERFRONT DR": {
+    "lat": 36.8503588,
+    "lon": -75.995083,
+    "display_name": "Waterfront Drive, Virginia Beach, Virginia, 23451, United States"
+  },
+  "WAVERLY DR": {
+    "lat": 36.8337833,
+    "lon": -76.0941869,
+    "display_name": "Waverly Drive, Princess Anne Plaza, Virginia Beach, Virginia, 23452, United States"
+  },
+  "WESLEY DR": {
+    "lat": 36.8357639,
+    "lon": -76.0628888,
+    "display_name": "Wesley Drive, Eureka Park, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "WEST LA": {
+    "lat": 36.8422254,
+    "lon": -76.017264,
+    "display_name": "West Lane, Oceana, Virginia Beach, Virginia, 23454, United States"
+  },
+  "WEST NECK RD": {
+    "lat": 36.7468862,
+    "lon": -76.0615269,
+    "display_name": "West Neck Road, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "WEST NECK ROAD": {
+    "lat": 36.7494684,
+    "lon": -76.0643702,
+    "display_name": "West Neck Road, Princess Anne, Virginia Beach, Virginia, 23456, United States"
+  },
+  "WEYBRIDGE DR": {
+    "lat": 36.7717276,
+    "lon": -76.0162522,
+    "display_name": "Weybridge Drive, Strawbridge, Nimmo, Virginia Beach, Virginia, 23454, United States"
+  },
+  "WHALES RUN": {
+    "lat": 36.7992644,
+    "lon": -75.9950836,
+    "display_name": "Whales Run Court, Virginia Village, Virginia Beach, Virginia, 23454, United States"
+  },
+  "WHITESTONE WY": {
+    "lat": 36.7635115,
+    "lon": -76.0077563,
+    "display_name": "Whitestone Way, Red Mill, Nimmo, Virginia Beach, Virginia, 23461, United States"
+  },
+  "WIIGWAAS LN": {
+    "lat": 36.854951,
+    "lon": -75.9839323,
+    "display_name": "Wiigwaas Lane, Salt Meadow Bay Condominiums, Virginia Beach, Virginia, 23451, United States"
+  },
+  "WILDERNESS LA": {
+    "lat": 36.7302144,
+    "lon": -76.060711,
+    "display_name": "Wilderness Lane, Virginia Beach, Virginia, 23456, United States"
+  },
+  "WILL O WISP": {
+    "lat": 36.8641685,
+    "lon": -76.0232618,
+    "display_name": "Will O Wisp Drive, Linkhorn Estates, Virginia Beach, Virginia, 23451, United States"
+  },
+  "WINDWARD SHORE DR": {
+    "lat": 36.9071277,
+    "lon": -76.0432963,
+    "display_name": "Windward Shore Drive, Bay Island, Virginia Beach, Virginia, 23451, United States"
+  },
+  "WINDY PINES BEND": {
+    "lat": 36.7684484,
+    "lon": -76.0323093,
+    "display_name": "Windy Pines Bend, Nimmo, Virginia Beach, Virginia, 23456, United States"
+  },
+  "WINTERBERRY LA": {
+    "lat": 36.7708044,
+    "lon": -76.0834099,
+    "display_name": "Winterberry Lane, Landstown, Virginia Beach, Virginia, 23453, United States"
+  },
+  "WINTERBERRY LANE": {
+    "lat": 36.7708817,
+    "lon": -76.083512,
+    "display_name": "Winterberry Lane, Landstown, Virginia Beach, Virginia, 23453, United States"
+  },
+  "WINTERBERRY LN": {
+    "lat": 36.7708817,
+    "lon": -76.083512,
+    "display_name": "Winterberry Lane, Landstown, Virginia Beach, Virginia, 23453, United States"
+  },
+  "WOLFSNARE DR": {
+    "lat": 36.8590952,
+    "lon": -76.0458094,
+    "display_name": "North Wolfsnare Drive, Wolfsnare Plantation, Virginia Beach, Virginia, 23454, United States"
+  },
+  "WOLFSNARE RD": {
+    "lat": 36.8546376,
+    "lon": -76.0391037,
+    "display_name": "Wolfsnare Road, Wolfsnare Plantation, Virginia Beach, Virginia, 23454, United States"
+  },
+  "WOODBURNE DR": {
+    "lat": 36.8124792,
+    "lon": -76.0912545,
+    "display_name": "Woodburne Drive, Kings Arm, Virginia Beach, Virginia, 23452, United States"
+  },
+  "WOODBURNE DRIVE": {
+    "lat": 36.8124792,
+    "lon": -76.0912545,
+    "display_name": "Woodburne Drive, Kings Arm, Virginia Beach, Virginia, 23452, United States"
+  },
+  "WOODSIDE LA": {
+    "lat": 36.9001033,
+    "lon": -76.0720614,
+    "display_name": "Woodside Lane, Virginia Beach, Virginia, 23459, United States"
+  },
+  "3600 VIRGINIA BEACH BL": {
+    "lat": 36.8406623,
+    "lon": -76.0948995,
+    "display_name": "3600, Virginia Beach Boulevard, Virginia Beach, Virginia, 23452, United States"
+  },
+  "3600 HOLLAND RD": {
+    "lat": 36.8129856,
+    "lon": -76.0977603,
+    "display_name": "3600, Holland Road, Virginia Beach, Virginia, 23452, United States"
+  },
+  "600 LYNNHAVEN PW": {
+    "lat": 36.8260059,
+    "lon": -76.0663406,
+    "display_name": "600, Lynnhaven Parkway, Lynnhaven, Virginia Beach, Virginia, 23452, United States"
+  },
+  "1700 VIRGINIA BEACH BL": {
+    "lat": 36.8428629,
+    "lon": -76.021745,
+    "display_name": "Wawa, 1700, Virginia Beach Boulevard, Virginia Beach, Virginia, 23454, United States"
+  },
+  "1000 GREAT NECK RD N": {
+    "lat": 36.864962,
+    "lon": -76.044838,
+    "display_name": "1000, North Great Neck Road, Virginia Beach, Virginia, 23454, United States"
+  },
+  "PRINCESS ANNE RD": {
+    "lat": 36.7875,
+    "lon": -76.0568,
+    "display_name": "Princess Anne Road, Virginia Beach, VA (manual seed)"
+  },
+  "LYNNHAVEN PW": {
+    "lat": 36.8305,
+    "lon": -76.0895,
+    "display_name": "Lynnhaven Parkway, Virginia Beach, VA (manual seed)"
+  },
+  "INDIAN RIVER RD": {
+    "lat": 36.752,
+    "lon": -76.0345,
+    "display_name": "Indian River Road, Virginia Beach, VA (manual seed)"
+  },
+  "SHORE DR": {
+    "lat": 36.8999,
+    "lon": -76.0237,
+    "display_name": "Shore Drive, Virginia Beach, VA (manual seed)"
+  },
+  "INDEPENDENCE BL": {
+    "lat": 36.8406,
+    "lon": -76.0743,
+    "display_name": "Independence Boulevard, Virginia Beach, VA (manual seed)"
+  },
+  "NORTHAMPTON BL": {
+    "lat": 36.8895,
+    "lon": -76.0408,
+    "display_name": "Northampton Boulevard, Virginia Beach, VA (manual seed)"
+  },
+  "VIRGINIA BEACH BLVD": {
+    "lat": 36.8513,
+    "lon": -75.9826,
+    "display_name": "Virginia Beach Boulevard, Virginia Beach, VA (manual seed)"
+  },
+  "KEMPSVILLE RD": {
+    "lat": 36.8386,
+    "lon": -76.0466,
+    "display_name": "Kempsville Road, Virginia Beach, VA (manual seed)"
+  },
+  "NEWTOWN RD": {
+    "lat": 36.8876,
+    "lon": -76.0094,
+    "display_name": "Newtown Road, Virginia Beach, VA (manual seed)"
+  },
+  "DIAMOND SPRINGS RD": {
+    "lat": 36.8549,
+    "lon": -76.0125,
+    "display_name": "Diamond Springs Road, Virginia Beach, VA (manual seed)"
+  },
+  "INDEPENDENCE BL S": {
+    "lat": 36.8202,
+    "lon": -76.0735,
+    "display_name": "Independence Boulevard S, Virginia Beach, VA (manual seed)"
+  },
+  "BONNEY RD": {
+    "lat": 36.8297,
+    "lon": -76.0631,
+    "display_name": "Bonney Road, Virginia Beach, VA (manual seed)"
+  },
+  "5000 FERRELL PW": {
+    "lat": 36.7302,
+    "lon": -75.9998,
+    "display_name": "Ferrell Parkway ~5000 block, Virginia Beach, VA (manual seed)"
+  },
+  "4900 PRINCESS ANNE RD": {
+    "lat": 36.784,
+    "lon": -76.0562,
+    "display_name": "Princess Anne Rd ~4900 block, Virginia Beach, VA (manual seed)"
+  },
+  "5700 NORTHAMPTON BL": {
+    "lat": 36.8925,
+    "lon": -76.0422,
+    "display_name": "Northampton Blvd ~5700 block, Virginia Beach, VA (manual seed)"
+  },
+  "2000 LYNNHAVEN PW": {
+    "lat": 36.8252,
+    "lon": -76.0875,
+    "display_name": "Lynnhaven Pkwy ~2000 block, Virginia Beach, VA (manual seed)"
+  },
+  "5800 NORTHAMPTON BL": {
+    "lat": 36.8935,
+    "lon": -76.043,
+    "display_name": "Northampton Blvd ~5800 block, Virginia Beach, VA (manual seed)"
+  },
+  "100 INDEPENDENCE BL S": {
+    "lat": 36.8345,
+    "lon": -76.073,
+    "display_name": "Independence Blvd S ~100 block, Virginia Beach, VA (manual seed)"
+  },
+  "5300 INDIAN RIVER RD": {
+    "lat": 36.743,
+    "lon": -76.0295,
+    "display_name": "Indian River Rd ~5300 block, Virginia Beach, VA (manual seed)"
+  },
+  "5600 INDIAN RIVER RD": {
+    "lat": 36.7373,
+    "lon": -76.0285,
+    "display_name": "Indian River Rd ~5600 block, Virginia Beach, VA (manual seed)"
+  },
+  "4700 BAXTER RD": {
+    "lat": 36.8411,
+    "lon": -76.0508,
+    "display_name": "Baxter Road ~4700 block, Virginia Beach, VA (manual seed)"
+  },
+  "5100 PRINCESS ANNE RD": {
+    "lat": 36.7755,
+    "lon": -76.0555,
+    "display_name": "Princess Anne Rd ~5100 block, Virginia Beach, VA (manual seed)"
+  },
+  "1400 KEMPSVILLE RD": {
+    "lat": 36.8381,
+    "lon": -76.0453,
+    "display_name": "Kempsville Rd ~1400 block, Virginia Beach, VA (manual seed)"
+  },
+  "4500 VIRGINIA BEACH BL": {
+    "lat": 36.846,
+    "lon": -76.062,
+    "display_name": "Virginia Beach Blvd ~4500 block, Virginia Beach, VA (manual seed)"
+  },
+  "4000 ELBOW RD": {
+    "lat": 36.7358,
+    "lon": -76.0225,
+    "display_name": "Elbow Road ~4000 block, Virginia Beach, VA (manual seed)"
+  }
+}

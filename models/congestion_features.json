@@ -1,0 +1,23 @@
+{
+  "features": [
+    "hour",
+    "month",
+    "is_night",
+    "is_rush_hour",
+    "is_weekend",
+    "at_intersection_binary",
+    "school_zone_binary",
+    "work_zone_binary",
+    "weather_encoded",
+    "light_encoded",
+    "surface_encoded",
+    "historical_crash_rate"
+  ],
+  "scaled_cols": [
+    "hour",
+    "month",
+    "historical_crash_rate"
+  ],
+  "leaky_col": "ADT",
+  "best_model": "XGBoost"
+}
