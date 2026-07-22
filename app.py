@@ -656,7 +656,9 @@ else:
         max_date = today + timedelta(days=5)
 
         with st.form("trip_form"):
-            selected_road = st.selectbox("Select Road", options=all_roads)
+            _default_road = "VIRGINIA BEACH BL"
+            _default_idx = all_roads.index(_default_road) if _default_road in all_roads else 0
+            selected_road = st.selectbox("Select Road", options=all_roads, index=_default_idx)
 
             selected_date = st.date_input(
                 "Travel Date",
