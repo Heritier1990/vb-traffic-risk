@@ -88,6 +88,24 @@ st.set_page_config(
     layout="wide",
 )
 
+# ── Hide all Streamlit branding (applies to both screens) ─────────────────────
+st.markdown("""
+<style>
+header[data-testid="stHeader"],
+[data-testid="stToolbar"],
+[data-testid="stDecoration"],
+[data-testid="stStatusWidget"],
+[data-testid="stAppDeployButton"],
+[data-testid="stFooter"],
+#MainMenu,
+footer,
+.viewerBadge_container__r5tak,
+.viewerBadge_link__qRIco,
+.stAppToolbar,
+#GithubIcon { display: none !important; }
+</style>
+""", unsafe_allow_html=True)
+
 # ── Session state ──────────────────────────────────────────────────────────────
 if "screen" not in st.session_state:
     st.session_state.screen = "landing"
