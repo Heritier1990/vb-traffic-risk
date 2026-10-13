@@ -7,6 +7,7 @@ from __future__ import annotations
 import base64
 import json
 import os
+import re
 import subprocess
 import sys
 import warnings
@@ -38,7 +39,25 @@ import numpy as np
 import pandas as pd
 import requests
 import streamlit as st
+import streamlit.components.v1 as components
 from streamlit_folium import st_folium
+
+# ── Paths ──────────────────────────────────────────────────────────────────────
+BASE   = Path(__file__).parent
+ASSETS = BASE / "assets"
+PROC   = BASE / "data" / "processed"
+MODELS = BASE / "models"
+
+# ── Page config — MUST be the very first Streamlit command, before st.secrets
+# is ever touched: accessing st.secrets with no secrets.toml makes Streamlit
+# render a "No secrets files found" notice, which would otherwise beat this
+# call to the punch and raise StreamlitAPIException. ──────────────────────────
+_icon_path = ASSETS / "traffic_icon.png"
+st.set_page_config(
+    page_title="Virginia Beach Traffic and Accident Risk Intelligence",
+    page_icon=str(_icon_path) if _icon_path.exists() else "🚦",
+    layout="wide",
+)
 
 # ── Environment — works locally (.env) and on Streamlit Cloud (st.secrets) ────
 try:
@@ -74,20 +93,6 @@ DS_FONT_SUBTITLE = "20px"
 DS_FONT_BODY     = "17px"
 DS_FONT_SMALL    = "14px"
 
-# ── Paths ──────────────────────────────────────────────────────────────────────
-BASE   = Path(__file__).parent
-ASSETS = BASE / "assets"
-PROC   = BASE / "data" / "processed"
-MODELS = BASE / "models"
-
-# ── Page config (must be first Streamlit call) ─────────────────────────────────
-_icon_path = ASSETS / "traffic_icon.png"
-st.set_page_config(
-    page_title="Virginia Beach Traffic and Accident Risk Intelligence",
-    page_icon=str(_icon_path) if _icon_path.exists() else "🚦",
-    layout="wide",
-)
-
 # ── Hide all Streamlit branding (applies to both screens) ─────────────────────
 st.markdown("""
 <style>
@@ -113,6 +118,170 @@ if "results" not in st.session_state:
     st.session_state.results = None
 if "submitted" not in st.session_state:
     st.session_state.submitted = False
+
+
+def is_mobile() -> bool:
+    """Best-effort phone detection from the request's User-Agent header."""
+    try:
+        ua = st.context.headers.get("User-Agent", "") or ""
+    except Exception:
+        ua = ""
+    return bool(re.search(r"Mobi|Android|iPhone|iPod", ua, re.IGNORECASE))
+
+
+def inject_theme_css() -> None:
+    """Navy app theme shared by the prediction screen and the mobile results screen."""
+    st.markdown(
+        """
+        <style>
+        /* ── Page & layout ───────────────────────────────────── */
+        .stApp,
+        [data-testid="stAppViewContainer"],
+        section.main,
+        [data-testid="stMainBlockContainer"]
+                                { background-color: #0B4F6C !important; }
+        .block-container        { background-color: transparent !important;
+                                  padding-top: 0.5rem !important;
+                                  padding-bottom: 0.5rem !important; }
+
+        /* ── Hide sidebar, toolbar, and header bar ──────────── */
+        [data-testid="stSidebar"] { display: none !important; }
+        [data-testid="stToolbar"] { display: none !important; }
+        [data-testid="stHeader"]  { display: none !important; }
+
+        /* ── Headings ─────────────────────────────────────────── */
+        h1, h2, h3, h4, h5, h6 { color: #ffffff !important; }
+
+        /* ── Paragraph / written text ────────────────────────── */
+        [data-testid="stText"],
+        [data-testid="stText"] *,
+        [data-testid="stMarkdownContainer"] p,
+        [data-testid="stMarkdownContainer"] li,
+        [data-testid="stMarkdownContainer"] span  { color: #ffffff !important; }
+
+        /* ── Widget labels (form field names) ────────────────── */
+        label                                     { color: #ffffff !important;
+                                                    font-weight: 700 !important; }
+        div[data-testid="stWidgetLabel"] p        { color: #ffffff !important;
+                                                    font-weight: 700 !important; }
+
+        /* ── st.write() text ─────────────────────────────────── */
+        [data-testid="stVerticalBlock"] > div > p { color: #ffffff !important; }
+
+        /* ── Caption text ────────────────────────────────────── */
+        [data-testid="stCaptionContainer"] p      { color: rgba(255,255,255,0.70) !important; }
+
+        /* ── Form card ───────────────────────────────────────── */
+        [data-testid="stForm"] {
+            background    : rgba(0,0,0,0.22) !important;
+            border        : 1px solid rgba(255,255,255,0.22) !important;
+            border-radius : 10px !important;
+            padding       : 14px !important;
+        }
+
+        /* ── Selectbox control — white bg, dark text (iOS Safari + dark-mode safe) ── */
+        .stSelectbox [data-baseweb="select"] > div,
+        .stSelectbox [data-baseweb="select"] > div > div {
+            background-color : #ffffff !important;
+            border-color     : #bbbbbb !important;
+            color-scheme     : light !important;
+        }
+        /* Specificity boosted (class repeated) to beat BaseWeb's own CSS-in-JS
+           text-color rule, which otherwise ties with a plain selector and wins
+           the cascade on iOS Safari. */
+        .stSelectbox.stSelectbox.stSelectbox [data-baseweb="select"] span,
+        .stSelectbox.stSelectbox.stSelectbox [data-baseweb="select"] div,
+        .stSelectbox.stSelectbox.stSelectbox [data-baseweb="select"] input  {
+            color                   : #1a1a1a !important;
+            -webkit-text-fill-color : #1a1a1a !important;
+            opacity                 : 1 !important;
+        }
+        .stSelectbox [data-baseweb="select"] svg    { fill: #444444 !important; }
+
+        /* ── Dropdown popup list — white bg, dark text (iOS Safari + dark-mode safe) ── */
+        [data-baseweb="popover"] > div,
+        [data-baseweb="popover"] [data-baseweb="menu"],
+        ul[data-baseweb="menu"]                 { background-color: #ffffff !important;
+                                                  border-color: #cccccc !important;
+                                                  color-scheme: light !important; }
+        [data-baseweb="option"][data-baseweb="option"],
+        [data-baseweb="option"][data-baseweb="option"] *   { background-color: #ffffff !important;
+                                                  color: #1a1a1a !important;
+                                                  -webkit-text-fill-color: #1a1a1a !important; }
+        [data-baseweb="option"][data-baseweb="option"]:hover,
+        [data-baseweb="option"][data-baseweb="option"]:hover *   { background-color: #e0f2f7 !important;
+                                                  color: #0B4F6C !important;
+                                                  -webkit-text-fill-color: #0B4F6C !important; }
+        [data-baseweb="option"][data-baseweb="option"][aria-selected="true"],
+        [data-baseweb="option"][data-baseweb="option"][aria-selected="true"] * {
+                                                  background-color: #cceaf4 !important;
+                                                  color: #0B4F6C !important;
+                                                  -webkit-text-fill-color: #0B4F6C !important; }
+
+        /* ── Date input — white bg, dark text (iOS Safari + dark-mode safe) ───────── */
+        .stDateInput.stDateInput.stDateInput input {
+            background-color       : #ffffff !important;
+            border-color           : #bbbbbb !important;
+            color                  : #1a1a1a !important;
+            -webkit-text-fill-color: #1a1a1a !important;
+            color-scheme           : light !important;
+            opacity                : 1 !important;
+        }
+        .stDateInput button,
+        .stDateInput svg                        { color: #333333 !important;
+                                                  fill:  #333333 !important; }
+
+        /* ── Back button — white text, visible border ────────── */
+        div[data-testid="stButton"] > button:not([kind="primary"]) {
+            color            : #ffffff !important;
+            border           : 1.5px solid rgba(255,255,255,0.65) !important;
+            background-color : rgba(255,255,255,0.10) !important;
+        }
+        div[data-testid="stButton"] > button:not([kind="primary"]):hover {
+            background-color : rgba(255,255,255,0.20) !important;
+            border-color     : #ffffff !important;
+        }
+
+        /* ── Analyze Risk button — ocean blue, white text ───── */
+        div[data-testid="stFormSubmitButton"] > button,
+        div[data-testid="stButton"] > button[kind="primary"] {
+            background-color : #00A8CC !important;
+            color            : #ffffff !important;
+            border-color     : #00A8CC !important;
+        }
+
+        /* ── Weather info banner ─────────────────────────────── */
+        [data-testid="stAlert"],
+        [data-testid="stInfo"]                  { background-color: rgba(0,25,45,0.85) !important;
+                                                  border-color: #00A8CC !important; }
+        [data-testid="stAlert"] *,
+        [data-testid="stInfo"] *                { color: #ffffff !important; }
+        [data-testid="stWarning"]               { background-color: rgba(244,162,97,0.20) !important; }
+        [data-testid="stWarning"] *             { color: #ffffff !important; }
+
+        /* ── HR ─────────────────────────────────────────────── */
+        hr { border-color: rgba(255,255,255,0.20) !important; }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def scroll_to_top() -> None:
+    """Force the viewport to the top — used when entering the results screen."""
+    components.html(
+        """
+        <script>
+            var doc = window.parent.document;
+            var main = doc.querySelector('section[data-testid="stMain"]')
+                       || doc.querySelector('section.main')
+                       || doc.documentElement;
+            main.scrollTo(0, 0);
+            doc.documentElement.scrollTo(0, 0);
+        </script>
+        """,
+        height=0,
+    )
 
 
 # ── Cached loaders ─────────────────────────────────────────────────────────────
@@ -305,6 +474,124 @@ def lookup_coords(selected_road: str) -> dict | None:
     return None
 
 
+def render_results(r: dict, map_height: int = 250) -> None:
+    """Risk cards + explanation + map. Used by the laptop col_right and the mobile results screen."""
+    _COLORS = {"High": "#E63946", "Medium": "#F4A261", "Low": "#0ACF83"}
+    card_a, card_b = st.columns(2)
+
+    def _risk_card(col, label, risk_class, confidence):
+        bg = _COLORS.get(risk_class, "#888")
+        col.markdown(
+            f"""
+            <div style="background:{bg};padding:12px 10px;border-radius:10px;
+                        text-align:center;color:white;margin-bottom:6px;">
+                <div style="font-size:12px;font-weight:700;letter-spacing:1px;
+                            margin-bottom:5px;">{label}</div>
+                <div style="font-size:28px;font-weight:800;line-height:1.1;">
+                    {risk_class}
+                </div>
+                <div style="font-size:13px;margin-top:5px;opacity:0.92;">
+                    {confidence:.0f}% confident
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    _risk_card(card_a, "ACCIDENT RISK",   r["acc_class"], r["acc_conf"])
+    _risk_card(card_b, "CONGESTION RISK", r["cong_class"], r["cong_conf"])
+
+    # Explanation
+    st.markdown(
+        f"""
+        <div style="background:rgba(255,255,255,0.10);border-left:4px solid #0099CC;
+                    padding:10px 14px;border-radius:8px;margin-bottom:10px;">
+            <div style="font-weight:700;font-size:14px;margin-bottom:6px;color:#ffffff;">
+                Explanation
+            </div>
+            <div style="font-size:13px;line-height:1.60;color:rgba(255,255,255,0.92);">
+                {r['ai_text']}
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    # ── Map — all roads with coordinates, colored by risk ─────────────
+    _CIRCLE_COLORS = {
+        "High":   "#E63946",
+        "Medium": "#F4A261",
+        "Low":    "#0ACF83",
+    }
+
+    # All roads that have coordinates
+    mapped_roads = hotspots[hotspots["lat"].notna()].copy()
+
+    # Center on selected road if coords available, else VB center
+    rc = lookup_coords(r["selected_road"])
+    map_center = [rc["lat"], rc["lon"]] if rc else [36.8529, -75.9780]
+
+    fmap = folium.Map(
+        location=map_center,
+        zoom_start=12,
+        tiles="OpenStreetMap",
+    )
+
+    for _, hrow in mapped_roads.iterrows():
+        level = hrow["accident_risk_level"]
+        color = _CIRCLE_COLORS.get(level, "#888888")
+        popup_html = (
+            f"<b>{hrow['road_key']}</b><br>"
+            f"Crashes (2023): {int(hrow['total_crashes'])}<br>"
+            f"Accident Risk: {level}<br>"
+            f"Congestion Risk: {hrow['congestion_risk_level']}<br>"
+            f"Avg ADT: {int(hrow['avg_ADT']):,}"
+        )
+        folium.CircleMarker(
+            location=[hrow["lat"], hrow["lon"]],
+            radius=7,
+            color=color,
+            fill=True,
+            fill_color=color,
+            fill_opacity=0.72,
+            weight=1.5,
+            popup=folium.Popup(popup_html, max_width=230),
+            tooltip=f"{hrow['road_key']} — {level} Risk",
+        ).add_to(fmap)
+
+    # Star marker for selected road
+    if rc is not None:
+        folium.Marker(
+            location=[rc["lat"], rc["lon"]],
+            icon=folium.DivIcon(
+                html=(
+                    '<div style="font-size:28px;line-height:1;'
+                    'text-align:center;color:#1565C0;">&#11088;</div>'
+                ),
+                icon_size=(32, 32),
+                icon_anchor=(16, 16),
+            ),
+            popup=folium.Popup("Your selected road", max_width=160),
+            tooltip="Your selected road",
+        ).add_to(fmap)
+
+    legend_html = """
+    <div style="position:fixed;bottom:10px;right:10px;z-index:9999;
+                background:white;color:#1a1a1a;padding:6px 10px;
+                border:2px solid #bbb;border-radius:8px;
+                font-size:11px;line-height:1.8;white-space:nowrap;
+                max-width:160px;box-sizing:border-box;
+                box-shadow:2px 2px 8px rgba(0,0,0,0.18);">
+        &#x1F7E2; Low risk<br>
+        &#x1F7E0; Medium risk<br>
+        &#x1F534; High risk<br>
+        &#11088; Your selected road
+    </div>
+    """
+    fmap.get_root().html.add_child(folium.Element(legend_html))
+
+    st_folium(fmap, use_container_width=True, height=map_height)
+
 
 # ══════════════════════════════════════════════════════════════════════════════
 # SCREEN: LANDING
@@ -395,6 +682,86 @@ section.main,
     border-color: #008fad !important;
     box-shadow: 0 6px 28px rgba(0,168,204,0.70) !important;
 }}
+
+/* ── Phones: collapse the absolutely-positioned layout into normal flow ── */
+@media (max-width: 768px) {{
+    #lnd-overlay {{
+        position: relative !important;
+        inset: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        overflow: visible !important;
+        padding: 28px 20px 10px !important;
+        gap: 14px !important;
+        box-sizing: border-box !important;
+    }}
+
+    #lnd-overlay .lnd-eyebrow,
+    #lnd-overlay .lnd-title,
+    #lnd-overlay .lnd-badges,
+    #lnd-overlay .lnd-warning,
+    #lnd-overlay .lnd-desc {{
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        text-align: center !important;
+    }}
+
+    #lnd-overlay .lnd-eyebrow  {{ order: 1; }}
+    #lnd-overlay .lnd-title    {{ order: 2; }}
+    #lnd-overlay .lnd-title > div {{
+        font-size: 28px !important;
+        line-height: 1.25 !important;
+        text-align: center !important;
+    }}
+    #lnd-overlay .lnd-badges  {{
+        order: 3;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }}
+    #lnd-overlay .lnd-badges > div {{
+        min-width: 150px !important;
+    }}
+    #lnd-overlay .lnd-warning {{
+        order: 4;
+        white-space: normal !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }}
+    #lnd-overlay .lnd-warning span {{
+        white-space: normal !important;
+        margin-right: 0 !important;
+    }}
+    #lnd-overlay .lnd-desc    {{ order: 5; }}
+    #lnd-overlay .lnd-desc p  {{
+        text-align: center !important;
+        margin: 0 auto !important;
+    }}
+
+    [data-testid="stButton"] {{
+        position: static !important;
+        left: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        width: 90% !important;
+        max-width: 280px !important;
+        margin: 10px auto 24px !important;
+    }}
+}}
 </style>
 
 <!-- ── Full-viewport scattered layout ──────────────────────────────────── -->
@@ -411,7 +778,7 @@ section.main,
 ">
 
   <!-- TOP LEFT ① ocean-blue eyebrow label ──────────────────────────────── -->
-  <div style="position:absolute;top:52px;left:64px;">
+  <div class="lnd-eyebrow" style="position:absolute;top:52px;left:64px;">
     <span style="
       color: #00A8CC;
       font-size: 13px;
@@ -422,7 +789,7 @@ section.main,
   </div>
 
   <!-- TOP LEFT ② main title ────────────────────────────────────────────── -->
-  <div style="position:absolute;top:80px;left:64px;max-width:55%;">
+  <div class="lnd-title" style="position:absolute;top:80px;left:64px;max-width:55%;">
     <div style="
       color: #ffffff;
       font-size: 48px;
@@ -433,7 +800,7 @@ section.main,
   </div>
 
   <!-- TOP RIGHT accuracy badges ────────────────────────────────────────── -->
-  <div style="position:absolute;top:52px;right:64px;display:flex;flex-direction:column;gap:12px;">
+  <div class="lnd-badges" style="position:absolute;top:52px;right:64px;display:flex;flex-direction:column;gap:12px;">
     <div style="
       background: rgba(0,0,0,0.58);
       border: 1px solid rgba(255,255,255,0.16);
@@ -465,7 +832,7 @@ section.main,
   </div>
 
   <!-- MIDDLE CENTER warning pill ───────────────────────────────────────── -->
-  <div style="
+  <div class="lnd-warning" style="
     position: absolute;
     top: 50%;
     left: 50%;
@@ -494,7 +861,7 @@ section.main,
   </div>
 
   <!-- BOTTOM LEFT description ──────────────────────────────────────────── -->
-  <div style="position:absolute;bottom:130px;left:64px;max-width:45%;">
+  <div class="lnd-desc" style="position:absolute;bottom:130px;left:64px;max-width:45%;">
     <p style="
       color: #ffffff;
       font-size: 16px;
@@ -518,128 +885,54 @@ section.main,
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# SCREEN: RESULTS (phones only)
+# ══════════════════════════════════════════════════════════════════════════════
+elif st.session_state.screen == "results":
+
+    if st.session_state.results is None:
+        st.session_state.screen = "prediction"
+        st.rerun()
+
+    inject_theme_css()
+    scroll_to_top()
+
+    if st.button("← Edit trip", key="edit_trip_btn"):
+        st.session_state.screen = "prediction"
+        st.rerun()
+
+    r = st.session_state.results
+    if r["weather_ok"] and r["weather_temp_f"] is not None:
+        st.info(
+            f"**Weather for {r['date_str']} at {r['display_time']}:** "
+            f"{r['weather_desc']} · {r['weather_temp_f']:.0f}°F · "
+            f"Wind {r['weather_wind']:.1f} mph"
+        )
+    else:
+        st.info(
+            f"**Conditions for {r['date_str']} at {r['display_time']}:** "
+            f"Clear · No weather data available"
+        )
+
+    render_results(r, map_height=380)
+
+    st.markdown(
+        "<hr style='border-color:rgba(255,255,255,0.18);margin-top:24px;'>",
+        unsafe_allow_html=True,
+    )
+    st.caption(
+        "Data: Virginia Beach Police Department 2023 · "
+        "Weather: OpenWeatherMap · "
+        "AI: Groq / Llama 3 · "
+        "Model: XGBoost · "
+        "Predictions valid within 5-day forecast window only"
+    )
+
+# ══════════════════════════════════════════════════════════════════════════════
 # SCREEN: PREDICTION
 # ══════════════════════════════════════════════════════════════════════════════
 else:
 
-    # ── Screen 2 styles ────────────────────────────────────────────────────────
-    st.markdown(
-        """
-        <style>
-        /* ── Page & layout ───────────────────────────────────── */
-        .stApp,
-        [data-testid="stAppViewContainer"],
-        section.main,
-        [data-testid="stMainBlockContainer"]
-                                { background-color: #0B4F6C !important; }
-        .block-container        { background-color: transparent !important;
-                                  padding-top: 0.5rem !important;
-                                  padding-bottom: 0.5rem !important; }
-
-        /* ── Hide sidebar, toolbar, and header bar ──────────── */
-        [data-testid="stSidebar"] { display: none !important; }
-        [data-testid="stToolbar"] { display: none !important; }
-        [data-testid="stHeader"]  { display: none !important; }
-
-        /* ── Headings ─────────────────────────────────────────── */
-        h1, h2, h3, h4, h5, h6 { color: #ffffff !important; }
-
-        /* ── Paragraph / written text ────────────────────────── */
-        [data-testid="stText"],
-        [data-testid="stText"] *,
-        [data-testid="stMarkdownContainer"] p,
-        [data-testid="stMarkdownContainer"] li,
-        [data-testid="stMarkdownContainer"] span  { color: #ffffff !important; }
-
-        /* ── Widget labels (form field names) ────────────────── */
-        label                                     { color: #ffffff !important;
-                                                    font-weight: 700 !important; }
-        div[data-testid="stWidgetLabel"] p        { color: #ffffff !important;
-                                                    font-weight: 700 !important; }
-
-        /* ── st.write() text ─────────────────────────────────── */
-        [data-testid="stVerticalBlock"] > div > p { color: #ffffff !important; }
-
-        /* ── Caption text ────────────────────────────────────── */
-        [data-testid="stCaptionContainer"] p      { color: rgba(255,255,255,0.70) !important; }
-
-        /* ── Form card ───────────────────────────────────────── */
-        [data-testid="stForm"] {
-            background    : rgba(0,0,0,0.22) !important;
-            border        : 1px solid rgba(255,255,255,0.22) !important;
-            border-radius : 10px !important;
-            padding       : 14px !important;
-        }
-
-        /* ── Selectbox control — white bg, dark text ─────────── */
-        .stSelectbox [data-baseweb="select"] > div,
-        .stSelectbox [data-baseweb="select"] > div > div {
-            background-color : #ffffff !important;
-            border-color     : #bbbbbb !important;
-        }
-        .stSelectbox [data-baseweb="select"] span,
-        .stSelectbox [data-baseweb="select"] div[class*="singleValue"],
-        .stSelectbox [data-baseweb="select"] div[class*="placeholder"],
-        .stSelectbox [data-baseweb="select"] input  { color: #1a1a1a !important; }
-        .stSelectbox [data-baseweb="select"] svg    { fill: #444444 !important; }
-
-        /* ── Dropdown popup list — white bg, dark text ─────────── */
-        [data-baseweb="popover"] > div,
-        [data-baseweb="popover"] [data-baseweb="menu"],
-        ul[data-baseweb="menu"]                 { background-color: #ffffff !important;
-                                                  border-color: #cccccc !important; }
-        [data-baseweb="option"]                 { background-color: #ffffff !important;
-                                                  color: #1a1a1a !important; }
-        [data-baseweb="option"]:hover           { background-color: #e0f2f7 !important;
-                                                  color: #0B4F6C !important; }
-        [data-baseweb="option"][aria-selected="true"] {
-                                                  background-color: #cceaf4 !important;
-                                                  color: #0B4F6C !important; }
-
-        /* ── Date input — white bg, dark text ───────────────── */
-        .stDateInput input {
-            background-color : #ffffff !important;
-            border-color     : #bbbbbb !important;
-            color            : #1a1a1a !important;
-        }
-        .stDateInput button,
-        .stDateInput svg                        { color: #333333 !important;
-                                                  fill:  #333333 !important; }
-
-        /* ── Back button — white text, visible border ────────── */
-        div[data-testid="stButton"] > button:not([kind="primary"]) {
-            color            : #ffffff !important;
-            border           : 1.5px solid rgba(255,255,255,0.65) !important;
-            background-color : rgba(255,255,255,0.10) !important;
-        }
-        div[data-testid="stButton"] > button:not([kind="primary"]):hover {
-            background-color : rgba(255,255,255,0.20) !important;
-            border-color     : #ffffff !important;
-        }
-
-        /* ── Analyze Risk button — ocean blue, white text ───── */
-        div[data-testid="stFormSubmitButton"] > button,
-        div[data-testid="stButton"] > button[kind="primary"] {
-            background-color : #00A8CC !important;
-            color            : #ffffff !important;
-            border-color     : #00A8CC !important;
-        }
-
-        /* ── Weather info banner ─────────────────────────────── */
-        [data-testid="stAlert"],
-        [data-testid="stInfo"]                  { background-color: rgba(0,25,45,0.85) !important;
-                                                  border-color: #00A8CC !important; }
-        [data-testid="stAlert"] *,
-        [data-testid="stInfo"] *                { color: #ffffff !important; }
-        [data-testid="stWarning"]               { background-color: rgba(244,162,97,0.20) !important; }
-        [data-testid="stWarning"] *             { color: #ffffff !important; }
-
-        /* ── HR ─────────────────────────────────────────────── */
-        hr { border-color: rgba(255,255,255,0.20) !important; }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
+    inject_theme_css()
 
     # ── Back button ────────────────────────────────────────────────────────────
     if st.button("← Back", key="back_btn"):
@@ -903,21 +1196,26 @@ else:
 
         ai_text: str | None = None
         groq_key = GROQ_API_KEY
+        _explanation_source = "fallback"
         if _GROQ_AVAILABLE and groq_key and groq_key != "your_groq_key_here":
             try:
                 _gclient    = _Groq(api_key=groq_key)
                 _completion = _gclient.chat.completions.create(
-                    model="llama3-8b-8192",
+                    model="llama-3.1-8b-instant",
                     messages=[{"role": "user", "content": groq_prompt}],
                     max_tokens=220,
                     temperature=0.3,
                 )
                 ai_text = _completion.choices[0].message.content.strip()
-            except Exception:
-                pass
+                _explanation_source = "groq"
+            except Exception as _groq_err:
+                print(f"[groq] call failed, using fallback text: {_groq_err}")
 
         if ai_text is None:
             ai_text = fallback_text
+
+        # Testing-only diagnostic — visible in server/app logs, never shown to visitors
+        print(f"[groq] explanation source for this request: {_explanation_source}")
 
         # Map sort column
         if is_night:
@@ -949,125 +1247,15 @@ else:
         }
         st.session_state.submitted = True
 
+        if is_mobile():
+            st.session_state.screen = "results"
+            st.rerun()
+
     # ── Results: risk cards + explanation (right col) then full-width map ────────
-    if st.session_state.submitted and st.session_state.results is not None:
-        r = st.session_state.results
-
+    # On phones, results are shown on the dedicated "results" screen instead (see above).
+    if st.session_state.submitted and st.session_state.results is not None and not is_mobile():
         with col_right:
-            _COLORS = {"High": "#E63946", "Medium": "#F4A261", "Low": "#0ACF83"}
-            card_a, card_b = st.columns(2)
-
-            def _risk_card(col, label, risk_class, confidence):
-                bg = _COLORS.get(risk_class, "#888")
-                col.markdown(
-                    f"""
-                    <div style="background:{bg};padding:12px 10px;border-radius:10px;
-                                text-align:center;color:white;margin-bottom:6px;">
-                        <div style="font-size:12px;font-weight:700;letter-spacing:1px;
-                                    margin-bottom:5px;">{label}</div>
-                        <div style="font-size:28px;font-weight:800;line-height:1.1;">
-                            {risk_class}
-                        </div>
-                        <div style="font-size:13px;margin-top:5px;opacity:0.92;">
-                            {confidence:.0f}% confident
-                        </div>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
-
-            _risk_card(card_a, "ACCIDENT RISK",   r["acc_class"], r["acc_conf"])
-            _risk_card(card_b, "CONGESTION RISK", r["cong_class"], r["cong_conf"])
-
-            # Explanation
-            st.markdown(
-                f"""
-                <div style="background:rgba(255,255,255,0.10);border-left:4px solid #0099CC;
-                            padding:10px 14px;border-radius:8px;margin-bottom:10px;">
-                    <div style="font-weight:700;font-size:14px;margin-bottom:6px;color:#ffffff;">
-                        Explanation
-                    </div>
-                    <div style="font-size:13px;line-height:1.60;color:rgba(255,255,255,0.92);">
-                        {r['ai_text']}
-                    </div>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-
-            # ── Map — all roads with coordinates, colored by risk ─────────────
-            _CIRCLE_COLORS = {
-                "High":   "#E63946",
-                "Medium": "#F4A261",
-                "Low":    "#0ACF83",
-            }
-
-            # All roads that have coordinates
-            mapped_roads = hotspots[hotspots["lat"].notna()].copy()
-
-            # Center on selected road if coords available, else VB center
-            rc = lookup_coords(r["selected_road"])
-            map_center = [rc["lat"], rc["lon"]] if rc else [36.8529, -75.9780]
-
-            fmap = folium.Map(
-                location=map_center,
-                zoom_start=12,
-                tiles="CartoDB positron",
-            )
-
-            for _, hrow in mapped_roads.iterrows():
-                level = hrow["accident_risk_level"]
-                color = _CIRCLE_COLORS.get(level, "#888888")
-                popup_html = (
-                    f"<b>{hrow['road_key']}</b><br>"
-                    f"Crashes (2023): {int(hrow['total_crashes'])}<br>"
-                    f"Accident Risk: {level}<br>"
-                    f"Congestion Risk: {hrow['congestion_risk_level']}<br>"
-                    f"Avg ADT: {int(hrow['avg_ADT']):,}"
-                )
-                folium.CircleMarker(
-                    location=[hrow["lat"], hrow["lon"]],
-                    radius=7,
-                    color=color,
-                    fill=True,
-                    fill_color=color,
-                    fill_opacity=0.72,
-                    weight=1.5,
-                    popup=folium.Popup(popup_html, max_width=230),
-                    tooltip=f"{hrow['road_key']} — {level} Risk",
-                ).add_to(fmap)
-
-            # Star marker for selected road
-            if rc is not None:
-                folium.Marker(
-                    location=[rc["lat"], rc["lon"]],
-                    icon=folium.DivIcon(
-                        html=(
-                            '<div style="font-size:28px;line-height:1;'
-                            'text-align:center;color:#1565C0;">&#11088;</div>'
-                        ),
-                        icon_size=(32, 32),
-                        icon_anchor=(16, 16),
-                    ),
-                    popup=folium.Popup("Your selected road", max_width=160),
-                    tooltip="Your selected road",
-                ).add_to(fmap)
-
-            legend_html = """
-            <div style="position:fixed;bottom:30px;right:30px;z-index:9999;
-                        background:white;padding:10px 14px;
-                        border:2px solid #bbb;border-radius:8px;
-                        font-size:12px;line-height:1.9;
-                        box-shadow:2px 2px 8px rgba(0,0,0,0.18);">
-                &#x1F7E2; Low risk<br>
-                &#x1F7E0; Medium risk<br>
-                &#x1F534; High risk<br>
-                &#11088; Your selected road
-            </div>
-            """
-            fmap.get_root().html.add_child(folium.Element(legend_html))
-
-            st_folium(fmap, use_container_width=True, height=250)
+            render_results(st.session_state.results, map_height=250)
 
     # ── Footer ─────────────────────────────────────────────────────────────────
     st.markdown(
